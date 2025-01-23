@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.barra {
+    background-color: darkcyan ;
+    height: 150px;
+    display: inline;
+    
+}
+
+img {
+   height:20px;
+
+
+}
+
+
