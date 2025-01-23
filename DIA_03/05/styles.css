@@ -1,0 +1,38 @@
+*¨ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*.div1 {
+    background-color: cadetblue;
+    border: 3px solid coral;
+    width: 300px;
+    height: 150px;
+    padding: 50px;
+}
+
+.div2 {
+    background-color: coral;
+    border: 3px dotted cadetblue;
+    width: 50%;
+    height: 60%;
+    margin: 50%;
+}*/
+
+.div1 {
+    background-color: cadetblue;
+    border: 6px double coral;
+    width: 300px;
+    height: 150px;
+    padding: 50px;
+}
+
+.div2 {
+    background-color: coral;
+    border: 5px dashed cadetblue;
+    width: 50%;
+    height: 60%;
+    margin: 50%;
+}
