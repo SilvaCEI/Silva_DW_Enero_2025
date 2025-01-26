@@ -16,6 +16,26 @@
 
 }
 
-img {
+.icono {
     height: 20px;
+}
+
+.body{
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+
+}
+
+.img-vertical{
+    height: 200px;
+}
+
+footer{
+    display: inline;
+    margin: 20px;
+}
+
+.img-footer{
+    width: 10px;
 }
