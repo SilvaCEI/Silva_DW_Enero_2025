@@ -30,3 +30,13 @@
 .img-vertical{
     height: 200px;
 }
+
+footer{
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+.img-footer{
+    width: 50PX;
+}
