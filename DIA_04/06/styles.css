@@ -6,28 +6,47 @@
     font-family: "Roboto", serif;
 }
 
-.barra {
+header {
     background-color: darkgrey;
-    height: 150px;
+    height: 75px;
+    padding: 15px;
+}
+
+nav {
+    float: right;
+}
+
+ul li {
     display: inline;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 8px;
+    font-weight: bold;
+    font-size: 30px;
 
 }
 
-.icono {
-    height: 20px;
+li {
+    padding-left: 15px;
+    color: black;
+    cursor: pointer;
 }
 
-.body{
-    display: inline-block;
-    width: 200px;
-    margin: 20px;
-
+li:hover {
+    color: beige;
 }
 
-.img-vertical{
-    height: 200px;
+.icon {
+    width: 50px;
 }
 
+main{
+    margin: 15px;
+}
+
+p{
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.photo{
+    width: 100%;
+    padding: 0 15%;
+}

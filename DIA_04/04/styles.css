@@ -5,23 +5,28 @@
     box-sizing: border-box;
 }
 
-.div1 {
-    background-color: darkcyan ;
-    padding: 30px;
+div {
+    border-radius: 12px;
+    margin: 15px;
     display: inline-block;
-    
+}
+
+.div1 {
+    background-color: darkcyan;
+    height: 200px;
+    width: 205px;
+
 }
 
 .div2 {
     background-color: lightgreen;
-    padding: 10px;
-    display: inline-block;
-
+    height: 100px;
+    width: 250px;
 
 }
 
-.div3{
+.div3 {
     background-color: royalblue;
-    padding: 50px;
-    display: inline-block;
+    height: 150px;
+    width: 200px;
 }
