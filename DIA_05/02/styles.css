@@ -10,10 +10,9 @@ header {
     background-color: darkgrey;
     height: 75px;
     padding: 15px;
-}
-
-nav {
-    float: right;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
 }
 
 ul li {
@@ -40,6 +39,9 @@ li:hover {
 main{
     padding: 15px;
     min-height: calc(100vh - 125px);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 p{
@@ -48,9 +50,31 @@ p{
     
 }
 
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .photo{
-    width: 100%;
-    padding: 0 15%;
+    width: calc(50vw - 44px);
+    height: calc(50vw - 44px);
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo1{
+    background-image:url(../01/pajaro3.jpg)
+}
+.photo2{
+    background-image:url(../01/pajaro\ 2.jpg)
+}
+.photo3{
+    background-image:url(../01/parjaros.jpg)
+}
+.photo4{
+    background-image:url(../01/pajaro\ copy.jpg)
 }
 
 footer{
