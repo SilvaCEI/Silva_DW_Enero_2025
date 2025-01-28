@@ -1,26 +1,45 @@
-*:not(button){
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    color: darkorange;
+h1 {font-family: "Carter One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #fafafa;
     padding: 10px 20px;
     
 }
 
-p {
+div{
+    margin: 20px 15px;
+    background-color: orange;
     padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
 
 img{
-    padding: 0 20px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 7px;
+    
+    
 }
 
 button{
-    margin: 20px;
-    padding: 20px;
-    border-radius: 4px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 7px;
+    font-family: "Carter One", serif;
+    background-color: #fafafa;
 }
