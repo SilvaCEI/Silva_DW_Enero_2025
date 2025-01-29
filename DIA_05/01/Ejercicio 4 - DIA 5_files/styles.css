@@ -48,13 +48,18 @@ header nav li a:hover {
     width: 50px;
 }
 
+main {
+    padding: 15px;
+    min-height: calc(100vh - 125px);
+    display: flex;
+    flex-direction: column;
 
-/*BODY*/
+}
 
 p {
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: justify;
-    
+
 }
 
 .photos {
@@ -91,50 +96,6 @@ p {
 
 .photo4 {
     background-image: url(../01/pajaro\ copy.jpg)
-}
-
-main {
-    padding: 15px;
-    min-height: calc(100vh - 125px);
-    display: flex;
-    flex-direction: column;
-
-}
-
-.new{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.new>div{
-    max-width: 420px;
-    margin: 20px;
-}
-
-img{
-    border-radius: 7px;
-}
-
-.galery{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-
-}
-
-.galery>img{
-    margin: 5px;
-    width: 250px;
-
-}
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
 }
 
 footer {

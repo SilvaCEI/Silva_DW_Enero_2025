@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/DIA_05/04/news.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Ejercicio 4 - DIA 5_files/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Ejercicio 4 - DIA 5_files/css2" rel="stylesheet">
+    <title>Ejercicio 4 - DIA 5</title>
+</head>
+
+<body>
+    <header>
+        <img href="index.html" src="./Ejercicio 4 - DIA 5_files/reddit.png" class="icon"> 
+        <nav>
+            <ul>
+                <li> <a href="http://127.0.0.1:5500/DIA_05/04/index.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/DIA_05/04/news.html" class="active">Noticias</a></li>
+                <li><a href="http://127.0.0.1:5500/DIA_05/04/galery.html">Galeria</a></li>
+                <li><a href="http://127.0.0.1:5500/DIA_05/04/contac.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos sed libero maxime necessitatibus
+            distinctio, aut ipsum expedita tempore beatae assumenda qui repellat vero voluptatum tempora nisi! Aut,
+            aliquid nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error assumenda
+            voluptates,
+            architecto deleniti totam blanditiis fugit, quibusdam quod ipsam libero quas hic laboriosam qui eaque
+            repellat expedita nemo officia.</p>
+
+        <div class="photos">
+            <div class="photo photo1"></div>
+            <div class="photo photo2"></div>
+            <div class="photo photo3"></div>
+            <div class="photo photo4"></div>
+
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus suscipit quas molestias, dicta nobis
+            sapiente sit saepe, soluta inventore atque rem sequi veritatis laudantium, mollitia ea quam? Eos,
+            asperiores
+            quos.
+            Ipsam quidem suscipit, corrupti velit eligendi ut molestias delectus rerum debitis quaerat atque
+            sapiente
+            quo sint aut tenetur eius hic repellendus enim aspernatur facilis est iste in modi. Ipsum, facere?
+            Voluptatum, quidem repudiandae repellat placeat corrupti impedit quod architecto deleniti ullam. Placeat
+            sed
+            minus iste ex accusantium voluptates sit totam voluptatum hic sunt quasi itaque quos, omnis magni quo
+            assumenda.</p>
+
+    </main>
+    <footer>
+        <a href="https://github.com/">Github</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/?lang=es&amp;mx=2">X</a>
+        <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
+
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
