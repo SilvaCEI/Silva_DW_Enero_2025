@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Ejercicio 4 - DIA 5</title>
+</head>
+
+<body>
+  <header>
+    <img src="./IMAGENES/isotipo.png" alt="icon" class="icon">
+    <nav>
+      <ul>
+        <li> <a href="index.html">Inicio</a></li>
+        <li><a href="quienesomos.html">¿Quiénes somos?</a></li>
+        <li><a href="products.html">Productos</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <h1>Contacto</h1>
+    <div>
+      <form action="/my-handling-form-page" method="post">
+        <ul class="info_contact">
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+          </li>
+          <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Envíe su mensaje</button>
+          </li>
+        </ul>
+      </form>
+
+    </div>
+  </main>
+  <footer>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
+    <a href="contact.html">Contacto</a>
+
+  </footer>
+</body>
+
+</html>
