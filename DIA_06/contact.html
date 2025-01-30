@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <title>Ejercicio 4 - DIA 5</title>
+  <title>Ejercicio 1 - DIA 6</title>
 </head>
 
 <body>
@@ -30,20 +30,20 @@
     <div>
       <form action="/my-handling-form-page" method="post">
         <ul class="info_contact">
-          <li>
+          <li class="datos_contact">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="user_name" />
           </li>
-          <li>
+          <li class="datos_contact">
             <label for="mail">Correo electrónico:</label>
             <input type="email" id="mail" name="user_mail" />
           </li>
-          <li>
-            <label for="msg">Mensaje:</label>
+          <li class="datos_contact">
+            <label for="msg" aria-placeholder="Cuetanos tu idea">Mensaje:</label>
             <textarea id="msg" name="user_message"></textarea>
           </li>
-          <li class="button">
-            <button type="submit">Envíe su mensaje</button>
+          <li class="button--butto">
+            <button class="button" type="submit">Enviar</button>
           </li>
         </ul>
       </form>

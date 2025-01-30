@@ -60,6 +60,7 @@ main {
     display: flex;
     flex-direction: column;
 
+
 }
 
 .slider {
@@ -75,15 +76,19 @@ main {
     overflow: hidden;
 }
 
+.phrase {
+    padding: 100px;
+}
+
 h1 {
     color: cadetblue;
     font-family: "Boogaloo", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
-    margin: 100px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 img {
@@ -130,16 +135,28 @@ p {
 
 
 /*-----¿QUIENES_SOMOS?-----*/
+
+.biography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
 .description {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100vw;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding: 20px 0;
+
 
 }
 
 .img_description {
-    width: 100vw;
     padding-left: 20px;
 
 
@@ -170,24 +187,29 @@ p {
 
 }
 
-.products:hover {
+.product:hover {
     box-shadow: 0 0 4px 2px lightblue;
 }
 
 .product_tarta {
-    background-image: url(./IMAGENES/tarta.jpg)
+    background-image: url(./IMAGENES/tarta.jpg);
+    text-align: center;
+
 }
 
 .product_dulce {
-    background-image: url(./IMAGENES/dulces.jpg)
+    background-image: url(./IMAGENES/dulces.jpg);
+    text-align: center;
 }
 
 .product_cupcake {
-    background-image: url(./IMAGENES/cupcake.jpg)
+    background-image: url(./IMAGENES/cupcake.jpg);
+    text-align: center;
 }
 
 .product_tradicionales {
-    background-image: url(./IMAGENES/tradicionales.jpg)
+    background-image: url(./IMAGENES/tradicionales.jpg);
+    text-align: center;
 }
 
 /*-----CONTACTO-----*/
@@ -197,26 +219,73 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
+    display: flex;
+    align-items: center;
 
+}
+
+.contact>h1 {
+    color: #fafafa;
+    margin: 50px;
 }
 
 .info_contact {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
+    flex-direction: column;
     color: #fafafa;
-    font-family: "Boogaloo", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
+    width: 40vw;
+    background-color: #add8e680;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
 
+.datos_contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+label {
+    text-shadow: 2px 2px 2px #BCBCBC;
+    margin: 4px;
+}
+
+textarea {
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    resize: none;
+    border-radius: 4px;
+}
+
+input {
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+
+.button--button{
+    display: flex;
+    align-content: end
+}
+.button {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 7px;
+    color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.button:hover {
+    color: lightblue;
 }
 
 
 /*-----FOOTER------*/
-
-/*SI ME DA TIEMPO CAMBIAR ETIQUETAS PARA PODER METER EL ISOTIPO A COLOR DEBAJO DE LOS ENLACES*/
 footer {
     background-color: #fafafa;
     height: 50px;
@@ -241,9 +310,4 @@ footer a {
 
 footer a:hover {
     color: lightblue;
-}
-
-.button {
-    color: cadetblue;
-
 }
