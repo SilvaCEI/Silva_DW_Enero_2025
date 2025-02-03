@@ -1,0 +1,30 @@
+*¨ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    print-color-adjust: exact;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    background-color: red;
+    border: 2px solid black;
+    width: 50vw;
+    height: 50vw;
+}
+
+@media print {
+    div {
+        background-color: green;
+        border: 2px solid black;
+        width: 50vw;
+        height: 50vw;
+    }
+}

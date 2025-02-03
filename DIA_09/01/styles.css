@@ -1,0 +1,20 @@
+*¨{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+background-color: cornflowerblue;
+border: 2px solid deeppink;
+width: 50vw;
+height: 50vh;
+}
