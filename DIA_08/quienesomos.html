@@ -13,23 +13,32 @@
 </head>
 
 <body>
-    <header>
-        <img src="./IMAGENES/isotipo.png" alt="icon" class="icon">
+    <header class="header">
+        <img src="./IMAGENES/isotipo.png" alt="icon" class="header__logo">
         <nav>
-            <ul>
-                <li> <a href="index.html">Inicio</a></li>
-                <li><a href="quienesomos.html" class="active">¿Quiénes somos?</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="quienesomos.html" class="header__nav-link header__nav-link--active">¿Quiénes somos?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="products.html" class="header__nav-link">Productos</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="biography">
-            <div class="description">
+    <main class="main">
+        <div class="main__biography">
+            <div class="main__description">
                 <p>
-                    En <span class="highlight">Dulce Encanto </span>, creemos que cada bocado es una oportunidad para
+                    En <span class="main__highlight">Dulce Encanto </span>, creemos que cada bocado es una oportunidad
+                    para
                     crear momentos inolvidables. Somos una pastelería dedicada a la elaboración artesanal de postres,
                     donde la pasión, la calidad y la creatividad se combinan para endulzar tu día.
                 </p>
@@ -54,20 +63,20 @@
                 </p>
                 <br>
                 <p>
-                    <span class="highlight">¡Déjate seducir por el encanto de lo dulce!</span>
+                    <span class="main__highlight">¡Déjate seducir por el encanto de lo dulce!</span>
                 </p>
             </div>
 
-            <div class="img_description">
-                <img src="./IMAGENES/dulce5.2.jpg" alt="">
+            <div class="main__img-container">
+                <img src="./IMAGENES/dulce5.2.jpg" class="main__img" alt="">
             </div>
 
         </div>
     </main>
-    <footer>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
-        <a href="contact.html">Contacto</a>
+    <footer class="footer">
+        <a href="https://www.instagram.com/" class="footer__link">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_ES" class="footer__link">Facebook</a>
+        <a href="contact.html" class="footer__link">Contacto</a>
 
     </footer>
 </body>

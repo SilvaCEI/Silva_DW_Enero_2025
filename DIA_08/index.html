@@ -13,55 +13,69 @@
 </head>
 
 <body>
-    <header>
-        <img src="./IMAGENES/isotipo.png" alt="icon" class="icon">
+    <header class="header">
+        <img src="./IMAGENES/isotipo.png" alt="icon" class="header__logo">
         <nav>
-            <ul>
-                <li> <a href="index.html" class="active">Inicio</a></li>
-                <li><a href="quienesomos.html" >¿Quiénes somos?</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link header__nav-link--active">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="quienesomos.html" class="header__nav-link">¿Quiénes somos?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="products.html" class="header__nav-link">Productos</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main class="main">
         <video autoplay loop muted id="video_background">
+
             <source src="./VIDEOS/TARTA_FRESAS.mp4" type="video/mp4">
-            
 
         </video>
-        <div class="phrase"> 
-            <h1>Cada bocado es una oportunidad para crear momentos inolvidables</h1>
+
+        <div class="main__claim">
+
+            <h1 class="main__phrase">Cada bocado es una oportunidad para crear momentos inolvidables</h1>
+
         </div>
-        <div class="sections">
+        <div class="main__sections">
 
-            <div class="section_drch">
+            <div class="main__section main__section--drch">
 
-                <p>Bienvenido a Dulce Encanto, donde cada bocado es una experiencia mágica. Disfruta de nuestros
+                <p class="main__text">Bienvenido a Dulce Encanto, donde cada bocado es una experiencia mágica. Disfruta
+                    de nuestros
                     pasteles y postres artesanales, elaborados con amor y los mejores ingredientes. <span
-                        class="highlight">Porque cada ocasión merece un toque dulce.</span></p>
+                        class="main__highlight">Porque cada ocasión merece un toque dulce.</span></p>
 
-                <img src="./IMAGENES/dulce1.jpg" alt="">
+                <img src="./IMAGENES/dulce1.jpg" class="main__img" alt="Postre tradicional">
 
             </div>
 
-            <div class="section_izq">
+            <div class="main__section main__section--izq">
 
-                <p>Descubre el arte de la repostería en Dulce Encanto. Cada creación es una combinación perfecta de
-                    sabor y delicadeza, hecha para endulzar tus momentos más especiales.<span class="highlight">Déjate
+                <p class="main__text">Descubre el arte de la repostería en Dulce Encanto. Cada creación es una
+                    combinación perfecta de
+                    sabor y delicadeza, hecha para endulzar tus momentos más especiales.<span
+                        class="main__highlight">Déjate
                         llevar por el encanto de lo dulce.</span></p>
 
-                <img src="./IMAGENES/dulce2.jpg" alt="">
+                <img src="./IMAGENES/dulce2.jpg" class="main__img" alt="Poste tradicional">
 
             </div>
         </div>
 
     </main>
-    <footer>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
-        <a href="contact.html">Contacto</a>
+    <footer class="footer">
+        <a href="https://www.instagram.com/" class="footer__link">Instagram</a>
+        <a href="https://www.facebook.com/?locale=es_ES" class="footer__link">Facebook</a>
+        <a href="contact.html" class="footer__link">Contacto</a>
 
     </footer>
 </body>
