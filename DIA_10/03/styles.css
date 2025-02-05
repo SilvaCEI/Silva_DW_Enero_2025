@@ -1,0 +1,12 @@
+*¨ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: cornflowerblue;
+    width: 80vw;
+    padding: calc(5rem - 50px);
+}

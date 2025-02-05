@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: lightcoral;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main__figure{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.main__figcaption{
+    font-size: 2em;
+    margin-top: 10px;
+}
