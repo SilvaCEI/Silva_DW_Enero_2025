@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: cadetblue;
+    width: 100vw;
+    height: 50px;
+}
+
+.fixed {
+    position: fixed;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    margin: 15px 30px;
+
+}
+
+li{
+    margin: 0 7px;
+}
