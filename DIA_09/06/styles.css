@@ -8,7 +8,7 @@
     font-family: "Roboto", serif;
 }
 
-header {
+.header {
     background-color: #fafafa;
     height: 75px;
     padding: 15px 35px;
@@ -18,35 +18,36 @@ header {
 
 }
 
-ul li {
+.header__nav-item {
     display: inline;
     font-weight: 400;
     font-size: 20px;
-
-}
-
-li {
     padding-left: 15px;
+
+}
+
+.header__nav-list {
+    list-style: none;
 }
 
 
-header nav li a {
+.header__nav-link {
     color: cadetblue;
     text-decoration: none;
 
 }
 
-header nav li a.active {
+.header__nav-link--active {
     color: #000000;
 
 }
 
-header nav li a:hover {
+.header__nav-link:hover {
     color: lightblue;
 
 }
 
-.icon {
+.header__logo {
     width: 100px;
 
 }
@@ -55,32 +56,17 @@ header nav li a:hover {
 
 /*-----INICIO----*/
 
-main {
+.main {
     min-height: calc(100vh - 125px);
     display: flex;
     flex-direction: column;
-
-
 }
 
-.slider {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.phrase {
+.main__claim {
     padding: 100px;
 }
 
-h1 {
+.main__phrase {
     color: cadetblue;
     font-family: "Boogaloo", serif;
     font-weight: 400;
@@ -91,60 +77,70 @@ h1 {
     text-align: center;
 }
 
-img {
+.main__img {
     border-radius: 7px;
 }
 
-.sections {
+.main__sections {
     padding: 0 20px;
 
 }
 
-.section_drch {
+.main__section {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    background-color: #add8e640;
-}
-
-.section_izq {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 20px;
-    background-color: #add8e640;
-}
-
-.section_drch,
-.section_izq {
     align-items: center;
     padding: 35px;
     border-radius: 10px;
+    background-color: #add8e640;
 }
 
-p {
+.main__section--drch {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.main__section--izq {
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+
+.main__text {
     padding: 0 40px;
     text-align: justify;
     font-size: 25px;
 
 }
 
-.highlight {
+.main__highlight {
     color: cadetblue;
     font-weight: bold;
 }
 
+.main__location {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 10em;
+    align-items: center;
+}
+
+.main__maps {
+    margin: 15px;
+    border-radius: 7px;
+}
+
+
 
 /*-----¿QUIENES_SOMOS?-----*/
 
-.biography {
+.main__biography {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-
 }
 
-.description {
+.main__description {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,25 +149,23 @@ p {
     max-width: 600px;
     padding: 20px 0;
 
-
 }
 
-.img_description {
+/* .main__img-container {
     padding-left: 20px;
 
-
-}
+} */
 
 
 /*-----PRODUCTOS-----*/
-.products {
+.main__products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 
-.products>div {
+.main__products>div {
     width: calc(50vw - 44px);
     height: calc(50vw - 44px);
     margin: 10px;
@@ -185,29 +179,30 @@ p {
     font-style: normal;
     font-size: 50px;
 
+
 }
 
-.product:hover {
+.main__product:hover {
     box-shadow: 0 0 4px 2px lightblue;
 }
 
-.product_tarta {
+.main__product-tarta {
     background-image: url(./IMAGENES/tarta.jpg);
     text-align: center;
 
 }
 
-.product_dulce {
+.main__product-dulce {
     background-image: url(./IMAGENES/dulces.jpg);
     text-align: center;
 }
 
-.product_cupcake {
+.main__product-cupcake {
     background-image: url(./IMAGENES/cupcake.jpg);
     text-align: center;
 }
 
-.product_tradicionales {
+.main__product-tradicionales {
     background-image: url(./IMAGENES/tradicionales.jpg);
     text-align: center;
 }
@@ -218,75 +213,87 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    min-height: calc(100vh - 125px);
     display: flex;
     align-items: center;
+    flex-direction: column;
 
 }
 
-.contact>h1 {
+.contact__title {
     color: #fafafa;
     margin: 50px;
 }
 
-.info_contact {
+.contact__form {
     display: flex;
     flex-direction: column;
-    color: #fafafa;
-    width: 40vw;
+    width: 60vw;
     background-color: #add8e680;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 7px;
 }
 
-.datos_contact {
+.contact__form-list {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.contact__form-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
 }
 
-label {
-    text-shadow: 2px 2px 2px #BCBCBC;
+
+.contact__label {
+    text-shadow: 1px 1px 1px #fafafa;
     margin: 4px;
 }
 
-textarea {
+.contact__input,
+.contact__textarea {
     padding: 10px;
-    height: 30px;
+    border-radius: 4px;
+}
+
+.contact__textarea {
+    height: 100px;
     width: 100%;
     resize: none;
-    border-radius: 4px;
 }
 
-input {
-    padding: 10px 12px;
-    border-radius: 4px;
+.contact__input {
+    height: 30px;
+    width: 100%;
 }
 
-.button--button{
-    display: flex;
-    align-content: end
-}
-.button {
+.contact__button {
+    width: 10vw;
     padding: 10px 15px;
     font-size: 20px;
     font-weight: 400;
     border-radius: 7px;
-    color: cadetblue;
+    color: #fafafa;
     display: flex;
-    justify-content: flex-end;
 
+    justify-content: center;
+    align-content: end;
+    background-color: cadetblue;
+    cursor: pointer;
 }
 
-.button:hover {
+.contact__button:hover {
     color: lightblue;
+    background-color: #fafafa;
 }
 
 
 /*-----FOOTER------*/
-footer {
+.footer {
     background-color: #fafafa;
     height: 50px;
     font-size: 20px;
@@ -302,16 +309,770 @@ footer img {
     flex-direction: column;
 }
 
-footer a {
+.footer__link {
     color: cadetblue;
     text-decoration: none;
     margin: 10px;
 }
 
-footer a:hover {
+.footer__link:hover {
     color: lightblue;
 }
 
+/*-----MEDIA QUERY-----*/
 
-/*MEDIA_QUERY*/
+@media (max-width:480px) {
+    div {
+        background-color: red;
+    }
+
+    .main__claim {
+        padding: 50px;
+    }
+
+    .main__phrase {
+        color: cadetblue;
+        font-family: "Boogaloo", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__img {
+        border-radius: 7px;
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__sections {
+        padding: 0 20px;
+
+    }
+
+    .main__section {
+        display: flex;
+        align-items: center;
+        padding: 15px 7px;
+        border-radius: 10px;
+        background-color: #add8e640;
+    }
+
+    .main__section--drch {
+        flex-direction: column;
+
+    }
+
+    .main__section--izq {
+        flex-direction: column;
+
+    }
+
+    .main__text {
+        padding: 0 20px;
+        text-align: justify;
+        font-size: 25px;
+
+    }
+
+    .main__highlight {
+        color: cadetblue;
+        font-weight: bold;
+    }
+
+    .main__video {
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__location {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        align-items: center;
+    }
+
+    .main__maps {
+        margin: 15px;
+        border-radius: 7px;
+    }
+
+
+    /*-----¿QUIENES_SOMOS?-----*/
+
+    .main__biography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .main__description {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        flex-wrap: wrap;
+        max-width: 600px;
+        padding: 20px 0;
+
+    }
+
+    .main__img-container {
+        display: none;
+    }
+
+
+    /*-----CONTACTO-----*/
+    .contact {
+        background-image: url(./IMAGENES/dulce3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: calc(100vh - 125px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contact__title {
+        color: #fafafa;
+        margin: 50px;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        background-color: #add8e680;
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .contact__form-list {
+        list-style: none;
+        padding-left: 0;
+
+    }
+
+    .contact__form-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+
+    .contact__label {
+        text-shadow: 1px 1px 1px #fafafa;
+        margin: 4px;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .contact__textarea {
+        height: 100px;
+        width: 100%;
+        resize: none;
+    }
+
+    .contact__input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .contact__button {
+        width: 10vw;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 7px;
+        color: #fafafa;
+        display: flex;
+
+        justify-content: center;
+        align-content: end;
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+
+    .contact__button:hover {
+        color: lightblue;
+        background-color: #fafafa;
+    }
+
+
+}
+
+@media (min-width: 480px) and (max-width:780px) {
+    div {
+        background-color: yellow;
+    }
+
+    .main {
+        min-height: calc(100vh - 125px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__claim {
+        padding: 50px;
+    }
+
+    .main__phrase {
+        color: cadetblue;
+        font-family: "Boogaloo", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__img {
+        border-radius: 7px;
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__sections {
+        padding: 0 20px;
+
+    }
+
+    .main__section {
+        display: flex;
+        align-items: center;
+        padding: 15px 7px;
+        border-radius: 10px;
+        background-color: #add8e640;
+    }
+
+    .main__section--drch {
+        flex-direction: column;
+
+    }
+
+    .main__section--izq {
+        flex-direction: column;
+
+    }
+
+    .main__text {
+        padding: 0 20px;
+        text-align: justify;
+        font-size: 25px;
+
+    }
+
+    .main__highlight {
+        color: cadetblue;
+        font-weight: bold;
+    }
+
+    .main__video {
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__location {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        align-items: center;
+    }
+
+    .main__maps {
+        margin: 15px;
+        border-radius: 7px;
+    }
+
+
+    /*-----¿QUIENES_SOMOS?-----*/
+
+    .main__biography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .main__description {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        flex-wrap: wrap;
+        max-width: 600px;
+        padding: 20px 0;
+
+    }
+
+    .main__img-container {
+        display: none;
+    }
+
+
+    /*-----CONTACTO-----*/
+    .contact {
+        background-image: url(./IMAGENES/dulce3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: calc(100vh - 125px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contact__title {
+        color: #fafafa;
+        margin: 50px;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        background-color: #add8e680;
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .contact__form-list {
+        list-style: none;
+        padding-left: 0;
+
+    }
+
+    .contact__form-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+
+    .contact__label {
+        text-shadow: 1px 1px 1px #fafafa;
+        margin: 4px;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .contact__textarea {
+        height: 100px;
+        width: 100%;
+        resize: none;
+    }
+
+    .contact__input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .contact__button {
+        width: 10vw;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 7px;
+        color: #fafafa;
+        display: flex;
+
+        justify-content: center;
+        align-content: end;
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+
+    .contact__button:hover {
+        color: lightblue;
+        background-color: #fafafa;
+    }
+
+
+
+}
+
+@media (min-width: 781px) and (max-width:1200px) {
+    div {
+        background-color: green;
+    }
+
+    .main {
+        min-height: calc(100vh - 125px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__claim {
+        padding: 50px;
+    }
+
+    .main__phrase {
+        color: cadetblue;
+        font-family: "Boogaloo", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__img {
+        border-radius: 7px;
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__sections {
+        padding: 0 20px;
+
+    }
+
+    .main__section {
+        display: flex;
+        align-items: center;
+        padding: 15px 7px;
+        border-radius: 10px;
+        background-color: #add8e640;
+    }
+
+    .main__section--drch {
+        flex-direction: row;
+
+    }
+
+    .main__section--izq {
+        flex-direction: row-reverse;
+
+    }
+
+    .main__text {
+        padding: 0 20px;
+        text-align: justify;
+        font-size: 25px;
+
+    }
+
+    .main__highlight {
+        color: cadetblue;
+        font-weight: bold;
+    }
+
+    .main__video {
+        max-width: 350px;
+        margin: 10px;
+    }
+
+    .main__location {
+        display: flex;
+        flex-direction: row;
+        margin: 2em;
+        align-items: center;
+    }
+
+    .main__maps {
+        margin: 15px;
+        border-radius: 7px;
+    }
+
+
+    /*-----¿QUIENES_SOMOS?-----*/
+
+    .main__biography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .main__description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        flex-wrap: wrap;
+        max-width: 600px;
+        padding: 20px 0;
+
+    }
+
+    .main__img-container {
+    align-content: center;
+    min-width: 100px;
+    }
+
+
+    /*-----CONTACTO-----*/
+    .contact {
+        background-image: url(./IMAGENES/dulce3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: calc(100vh - 125px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contact__title {
+        color: #fafafa;
+        margin: 50px;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        background-color: #add8e680;
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .contact__form-list {
+        list-style: none;
+        padding-left: 0;
+
+    }
+
+    .contact__form-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+
+    .contact__label {
+        text-shadow: 1px 1px 1px #fafafa;
+        margin: 4px;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .contact__textarea {
+        height: 100px;
+        width: 100%;
+        resize: none;
+    }
+
+    .contact__input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .contact__button {
+        width: 10vw;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 7px;
+        color: #fafafa;
+        display: flex;
+
+        justify-content: center;
+        align-content: end;
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+
+    .contact__button:hover {
+        color: lightblue;
+        background-color: #fafafa;
+    }
+
+
+}
+
+@media (min-width: 1201) {
+    div {
+        background-color: blue;
+
+  }
+
+
+/*-----¿QUIENES_SOMOS?-----*/
+
+.main__biography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.main__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding: 20px 0;
+
+}
+
+.main__img-container {
+    max-width: 600px;
+}
+
+
+/*-----PRODUCTOS-----*/
+.main__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.main__products>div {
+    width: calc(50vw - 44px);
+    height: calc(50vw - 44px);
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    transition: all 0.7s;
+    font-family: "Boogaloo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+
+}
+
+.main__product:hover {
+    box-shadow: 0 0 4px 2px lightblue;
+}
+
+.main__product-tarta {
+    background-image: url(./IMAGENES/tarta.jpg);
+    text-align: center;
+
+}
+
+.main__product-dulce {
+    background-image: url(./IMAGENES/dulces.jpg);
+    text-align: center;
+}
+
+.main__product-cupcake {
+    background-image: url(./IMAGENES/cupcake.jpg);
+    text-align: center;
+}
+
+.main__product-tradicionales {
+    background-image: url(./IMAGENES/tradicionales.jpg);
+    text-align: center;
+}
+
+/*-----CONTACTO-----*/
+.contact {
+    background-image: url(./IMAGENES/dulce3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 125px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact__title {
+    color: #fafafa;
+    margin: 50px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: #add8e680;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.contact__form-list {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.contact__form-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.contact__label {
+    text-shadow: 1px 1px 1px #fafafa;
+    margin: 4px;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contact__textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.contact__input {
+    height: 30px;
+    width: 100%;
+}
+
+.contact__button {
+    width: 10vw;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 7px;
+    color: #fafafa;
+    display: flex;
+
+    justify-content: center;
+    align-content: end;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.contact__button:hover {
+    color: lightblue;
+    background-color: #fafafa;
+}
+
+}
 
