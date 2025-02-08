@@ -13,49 +13,66 @@
 </head>
 
 <body>
-  <header>
-    <img src="./IMAGENES/isotipo.png" alt="icon" class="icon">
-    <nav>
-      <ul>
-        <li> <a href="index.html">Inicio</a></li>
-        <li><a href="quienesomos.html">¿Quiénes somos?</a></li>
-        <li><a href="products.html">Productos</a></li>
-        <li><a href="contact.html" class="active">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header class="header">
+        <img src="./IMAGENES/isotipo.png" alt="icon" class="header__logo">
+        <nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="quienesomos.html" class="header__nav-link ">¿Quiénes somos?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="products.html" class="header__nav-link ">Productos</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link
+                    header__nav-link--active">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
   <main class="contact">
-    <h1>Contacto</h1>
+    <h1 class="contact__title">Contacto</h1>
     <div>
-      <form action="/my-handling-form-page" method="post">
-        <ul class="info_contact">
-          <li class="datos_contact">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" />
+      <form action="/my-handling-form-page" method="post" class="contact__form"> 
+        <ul class="contact__form-list">
+          <li class="contact__form-item">
+
+            <label for="name" class="contact__label">Nombre:</label>
+            <input type="text" id="name" name="user_name" class="contact__input"/>
+
           </li>
-          <li class="datos_contact">
-            <label for="mail">Correo electrónico:</label>
-            <input type="email" id="mail" name="user_mail" />
+          <li class="contact__form-item">
+
+            <label for="mail" class="contact__label">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" class="contact__input"/>
+
           </li>
-          <li class="datos_contact">
-            <label for="msg" aria-placeholder="Cuetanos tu idea">Mensaje:</label>
-            <textarea id="msg" name="user_message"></textarea>
+          <li class="contact__form-item">
+
+            <label for="msg" aria-placeholder="Cuetanos tu idea" class="contact__label">Mensaje:</label>
+            <textarea id="msg" name="user_message" class="contact__textarea"></textarea>
+
           </li>
-          <li class="button--butto">
-            <button class="button" type="submit">Enviar</button>
+          <li class="contact__form-item">
+            
+            <button class="contact__button" type="submit">Enviar</button>
+
           </li>
         </ul>
       </form>
 
     </div>
   </main>
-  <footer>
-    <a href="https://www.instagram.com/">Instagram</a>
-    <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
-    <a href="contact.html">Contacto</a>
+  <footer class="footer">
+    <a href="https://www.instagram.com/" class="footer__link">Instagram</a>
+    <a href="https://www.facebook.com/?locale=es_ES" class="footer__link">Facebook</a>
+    <a href="contact.html" class="footer__link">Contacto</a>
 
-  </footer>
+</footer>
 </body>
 
 </html>
