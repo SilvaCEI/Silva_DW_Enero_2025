@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Ejercicio 1 - DIA 6</title>
+</head>
+
+<body>
+ <header class="header">
+        <img src="./IMAGENES/isotipo.png" alt="icon" class="header__logo">
+        <nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="quienesomos.html" class="header__nav-link ">¿Quiénes somos?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="products.html" class="header__nav-link ">Productos</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link
+                    header__nav-link--active">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="contact">
+    <h1 class="contact__title">Contacto</h1>
+    <section>
+      <form action="/my-handling-form-page" method="post" class="contact__form"> 
+        <ul class="contact__form-list">
+          <li class="contact__form-item">
+
+            <label for="name" class="contact__label">Nombre:</label>
+            <input type="text" id="name" name="user_name" class="contact__input"/>
+
+          </li>
+          <li class="contact__form-item">
+
+            <label for="mail" class="contact__label">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" class="contact__input"/>
+
+          </li>
+          <li class="contact__form-item">
+
+            <label for="msg" aria-placeholder="Cuetanos tu idea" class="contact__label">Mensaje:</label>
+            <textarea id="msg" name="user_message" class="contact__textarea"></textarea>
+
+          </li>
+          <li class="contact__form-item">
+            
+            <button class="contact__button" type="submit">Enviar</button>
+
+          </li>
+        </ul>
+      </form>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="https://www.instagram.com/" class="footer__link">Instagram</a>
+    <a href="https://www.facebook.com/?locale=es_ES" class="footer__link">Facebook</a>
+    <a href="contact.html" class="footer__link">Contacto</a>
+
+</footer>
+</body>
+
+</html>
