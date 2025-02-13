@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.div__1{
+    background-color: aqua;
+}
+
+.div__2{
+    background-color: blueviolet;
+    
+    left: 100vw;
+}
+
+.div__3{
+    background-color: chartreuse;
+    top: 100vh;
+    
+}
+
+.div__4{
+    background-color: coral;
+    top: 100vh;
+    left: 100vw;
+}
+
+.div__5{
+    background-color: cornflowerblue;
+    top: 50vh;
+    left: 50vw;
+}

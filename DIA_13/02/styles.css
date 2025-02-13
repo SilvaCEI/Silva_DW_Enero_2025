@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+p{
+    width: 50vw;
+    text-align: justify;
+    
+}
+
+.paragraph__left{
+    position: relative;
+    bottom: 50px;
+    right: 25vw;
+    background-color: aquamarine;
+}
+
+.paragraph__right{
+    position: relative;
+    top: 50px;
+    left: 25vw;
+}
