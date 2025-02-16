@@ -5,6 +5,34 @@ border: 0;
 box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+p{
+    width: 50vw;
+    text-align: justify;
+    
+}
+
+.paragraph__left{
+    position: relative;
+    top: 50px;
+    left: 25vw;
+    background-color: aquamarine;
+}
+
+.paragraph__right{
+    position: relative;
+    bottom: 50px;
+    right: 25vw;
+    background-color: burlywood;
+}
+
+
+
 div{
     width: 100px;
     height: 100px;
@@ -13,28 +41,31 @@ div{
 
 .div__1{
     background-color: aqua;
+    top: 0;
+    left: 0;
 }
 
 .div__2{
     background-color: blueviolet;
-    
-    left: 100vw;
+    top: 0;
+    right: 0;
 }
 
 .div__3{
     background-color: chartreuse;
-    top: 100vh;
+    bottom: 0;
+    right: 0;
     
 }
 
 .div__4{
     background-color: coral;
-    top: 100vh;
-    left: 100vw;
+    bottom: 0;
+    left: 0;
 }
 
 .div__5{
     background-color: cornflowerblue;
-    top: 50vh;
-    left: 50vw;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
 }

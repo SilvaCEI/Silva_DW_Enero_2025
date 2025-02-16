@@ -11,6 +11,12 @@ body{
     align-items: center;
     overflow: hidden;
 }
+
+.h1-sticky{
+    position: sticky;
+    top: 0px;
+    background-color: darkkhaki;
+}
 p{
     width: 50vw;
     text-align: justify;
