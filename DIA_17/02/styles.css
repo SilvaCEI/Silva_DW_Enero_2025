@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+.body{
+    margin: 40px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    grid-template-rows: 100px 100px 100px ;
+    grid-auto-flow: column;
+}
+
+.box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.box:nth-last-child(even){
+    background-color: #ccc;
+    color: #000;
+
+}
