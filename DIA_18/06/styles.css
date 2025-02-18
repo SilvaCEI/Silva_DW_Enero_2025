@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 60px;
+    border: 1px solid black;
+}
+
+.rojo {
+    background-color: red;
+    transform: rotate3d(1, 1, 1, 75deg);
+   
+}
+
+.azul {
+    background-color: blue;
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+.verde {
+    background-color: green;
+    transform: rotate3d(1, 1, 1, 45deg);
+    
+}

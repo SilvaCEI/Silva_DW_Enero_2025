@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 20vw;
+    width: 50vw;
+    border-radius: 5px;
+    margin: 60px;
+    border: 1px solid black;
+}
+
+.rojo {
+    background: radial-gradient(circle, rgba(45, 2, 8, 1) 0%, rgba(252, 111, 51, 1) 18%, rgba(253, 29, 29, 1) 40%, rgba(252, 127, 56, 1) 44%, rgba(125, 44, 25, 1) 75%, rgba(253, 62, 38, 1) 79%, rgba(252, 176, 69, 1) 100%);
+
+}
+
+.azul {
+    background: linear-gradient(50deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 19%, rgba(16, 16, 32, 1) 23%, rgba(4, 112, 189, 1) 55%, rgba(6, 68, 160, 1) 60%, rgba(0, 212, 255, 1) 100%);
+}
+
+.verde {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(238, 187, 55, 1) 9%, rgba(125, 190, 133, 1) 33%, rgba(251, 187, 46, 1) 50%, rgba(102, 191, 148, 1) 81%, rgba(253, 187, 45, 1) 100%);
+
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+img{
+    width: 15%;
+    margin: 20px;
+}
+
+.dino_a{
+    filter: brightness(0.4);
+}
+
+.dino_b{
+    filter: contrast(200%);
+}
+
+.dino_c{
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.dino_d{
+    filter: grayscale(70%);
+}
+
+.dino_e{
+    filter: hue-rotate(90deg);
+}
+
+.dino_f{
+    filter: invert(75%);
+}
+
+.dino_g{
+    filter: opacity(25%);
+}
+
+.dino_h{
+    filter: saturate(60%);
+}
+
+.dino_i{
+    filter: sepia(90%);
+}
+
+.dino_j{
+    filter: blur(5px);
+}

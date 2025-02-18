@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 40vw;
+    margin: 50px;
+    padding: 20px;
+}
+
+.text {
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 2em;
+    text-transform: initial;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    text-shadow: 2px 2px 2px #d076f7;
+    color: #333;
+}

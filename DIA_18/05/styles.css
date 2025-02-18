@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+img {
+    width: 15%;
+    margin: 20px;
+}
+
+.chula_a {
+    mix-blend-mode: normal;
+}
+
+.chula_b {
+    mix-blend-mode: multiply;
+}
+
+.chula_c {
+    mix-blend-mode: screen;
+}
+
+.chula_d {
+    mix-blend-mode: overlay;
+}
+
+.chula_e {
+    mix-blend-mode: darken;
+}
+
+.chula_f {
+    mix-blend-mode: lighten;
+}
+
+.chula_g {
+    mix-blend-mode: color-dodge;
+}
+
+.chula_h {
+    mix-blend-mode: color-burn;
+}
+
+.chula_i {
+    mix-blend-mode: hard-light;
+}
+
+.chula_j {
+    mix-blend-mode: soft-light;
+}
+
+.chula_k {
+    mix-blend-mode: difference;
+}
+
+.chula_l {
+    mix-blend-mode: exclusion;
+}
+
+.chula_m {
+    mix-blend-mode: hue;
+}
+
+.chula_n {
+    mix-blend-mode: saturation;
+}
+
+.chula_o {
+    mix-blend-mode: color;
+}
+
+.chula_p {
+    mix-blend-mode: luminosity;
+}

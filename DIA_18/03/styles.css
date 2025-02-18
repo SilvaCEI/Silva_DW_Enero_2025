@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border-radius: 5px;
+}
+
+.padre{
+    border: 2px solid blue;
+    width: 40vw;
+}
+
+.hijo{
+   border: 2px solid orangered;
+    width: 20vw;
+    height: 20vh;
+    margin: 10vw;
+}
