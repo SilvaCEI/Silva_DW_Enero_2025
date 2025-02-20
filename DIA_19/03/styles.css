@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div{
+    padding: 30px;
+}
+.text__animation {
+    font-size: 30px;
+    text-align: justify;
+    animation-name: text-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes text-animation {
+    0% {
+        color: #fafafa;
+    }
+    100% {
+        color: black;
+    }
+
+}

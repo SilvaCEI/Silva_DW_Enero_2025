@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.forma{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    animation-name: cuadrado;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cuadrado{
+0% { transform: translateX(0);}
+100% { transform: translateX( calc(100vw - 100px) );}
+}

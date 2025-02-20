@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+div{
+    width: 100px;
+    height: 100px;  
+
+}
+
+.rojo{
+    background-color: red;
+    transition: width 2s;
+}
+
+.rojo:hover{
+    width: 200px;
+}
+
+.azul{
+    background-color: blue;
+    transition: height 2s;
+}
+
+.azul:hover{
+    height:  200px;
+}
+
+.verde{
+    background-color: green;
+    transition: width 2s, height 2s;
+}
+
+.verde:hover{
+    width: 200px;
+    height: 200px;
+}

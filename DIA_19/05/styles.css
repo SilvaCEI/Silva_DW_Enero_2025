@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+div {
+    width: 100px;
+    height: 100px;
+
+}
+
+.rojo {
+    background-color: red;
+    transition: 5s;
+    
+}
+
+.rojo:hover{
+    background-color: lightseagreen;
+    width: 400px;
+    height: 400px;
+}
