@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+
+.index__new--xl{
+    width: 30vw;
+    height: 30vw;
+    background-color: chocolate;
+}
+
+.index__new--m{
+    width: 15vw;
+    height: 15vw;
+    background-color: darkmagenta;
+}
+
+.index__new--alone{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.index__new--group{
+    display: grid;
+    
+}
