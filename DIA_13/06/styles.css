@@ -25,9 +25,6 @@ body {
     justify-content: space-between;
     font-size: 2.1875rem;
     font-weight: 800;
-    position: fixed;
-    top: 0;
-    left: 25vw;
 
 
 }
@@ -58,37 +55,109 @@ header {
     background-repeat: no-repeat;
     background-size: 155vw;
     background-position: center;
+    height: 100vh;
 }
 
 
 .header__claim {
     color: #fafafa;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
     position: sticky;
-    top: 50vw;
-    left: 39vw;
+    top: 30vh;
+    left: 50vw;
 
 
 }
 
-
-.header__img--cup {
-    width: 30vw;
-    position: relative;
-    top: 35vw;
-    left: 35vw;
-    border-radius: 10px;
-
+header {
+    background-color: bisque;
 
 }
+
+.index__main--texts {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+
+}
+
 
 .main__text {
     font-size: 30px;
-    width: 50vw;
-    text-align: justify;
+    width: 40vw;
+    text-align: center;
+    margin: 100px;
+    justify-items: center;
+}
+
+.main__img {
+    width: 20vw;
+    margin: 30px 0;
+    background-image: url(./IMAGENES/granos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+}
+
+
+/*---------CARTA-------------*/
+
+.main__carta {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.main__carta--card {
+    background-color: seashell;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 40px;
 
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.main__carta--category {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #d3c2a7;
+
+}
+
+.main__carta--item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 25px;
+}
+
+.main__carta--item:last-child {
+    border-bottom: none;
+}
+
+/*---------NOSOTROS-------------*/
+
+.main__nosotros {
+    margin: 80px 40px;
+}
+
+.main__nosotros--items{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__text--large{
+    font-size: 25px;
+    width: 70vw;
+    text-align: justify;
 }
