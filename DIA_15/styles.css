@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+body {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+}
+
+
+.nav {
+    height: 75px;
+    padding: 0 20px;
+    color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.1875rem;
+    font-weight: 800;
+
+
+}
+
+
+.nav__isotipo {
+    width: 45px;
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    margin: 0 .625rem;
+
+}
+
+.ancla {
+    color: #fafafa;
+    text-decoration: none;
+
+    ;
+}
+
+a {
+    color: sienna;
+    text-decoration: none;
+}
+
+ul li:hover {
+    color: sienna;
+}
+
+header {
+    background-image: url(./IMAGENES/macro_coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 155vw;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.header__claim {
+    color: #fafafa;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    top: 30vh;
+    left: 50vw;
+
+
+}
+
+header {
+    background-color: bisque;
+
+}
+
+.index__main--texts {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+
+}
+
+
+.main__text {
+    font-size: 30px;
+    width: 40vw;
+    text-align: center;
+    margin: 100px;
+    justify-items: center;
+}
+
+.main__img {
+    width: 20vw;
+    margin: 30px 0;
+    background-image: url(./IMAGENES/granos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+}
+/*---------MP3-------------*/
+
+.main__audio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*---------CARTA-------------*/
+
+.main__carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__carta--card {
+    background-color: seashell;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 40px;
+
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.main__carta--category {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    border-bottom: 2px solid #d3c2a7;
+
+}
+
+.main__carta--item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 25px;
+}
+
+.main__carta--item:last-child {
+    border-bottom: none;
+}
+
+/*---------NOSOTROS-------------*/
+
+.main__nosotros {
+    margin: 80px 40px;
+}
+
+.main__nosotros--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text--large {
+    font-size: 25px;
+    width: 50vw;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+/*---------ENCUENTRANOS-----------*/
+
+
+.main__encuentranos {
+    background-color: rgb(255, 247, 232);
+    margin: 50px;
+    border-radius: 6px;
+
+}
+
+.main__encuentranos--row {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__encuentranos--direccion {
+    width: 50vw;
+}
+
+.main__encuentranos--iframe {
+    width: 50vw;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 6px;
+
+}
+
+/*------------MP4--------------*/
+.main__video--side{
+    height: 720px;
+}
+
+
+
+/*--------FORMULARIO-------*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./IMAGENES/macro_coffee.jpg);
+
+}
+
+.contact {
+    background-color: rgb(244, 214, 193);
+    border-radius: 5px;
+    margin: 30px 0;
+    
+
+}
+
+form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.info{
+    font-size: 27px;
+}
+input {
+    margin: 5px 0 15px 0;
+}
+
+.text_box {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.text_area {
+    height: 100px;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: sienna;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fafafa;
+
+}
+
+.button:hover {
+    background-color: rgb(202, 130, 97);
+
+
+}
+
+
+/*----------------ECO----------------*/
+
+.main__eco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main__eco--etiqueta{
+    width: 50px;
+margin: 20px 30px;
+}
