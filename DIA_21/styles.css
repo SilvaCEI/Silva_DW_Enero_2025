@@ -13,7 +13,9 @@
 .index__main--aside{
     width: 15vw;
     margin: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border-radius: 7px;
+    border: 1px solid black;
 }
 .index__new--rows{
     display: flex;
@@ -21,6 +23,7 @@
     align-items: center;
 }
 
+/*-------------GRID DE NOTICIAS DEL INDEX-----------*/
 .index__new--row{
     display: grid;
     grid-template-columns: repeat(4, 15vw);

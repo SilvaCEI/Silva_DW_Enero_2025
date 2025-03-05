@@ -1,9 +1,3 @@
-let result = '';
-let i = 0;
+const array1 = ['a', 'b', 'c'];
 
-do {
-    i = i + 1;
-    result = result + i;
-} while (i < 5);
-
-console.log(result);
+array1.forEach((element) => console.log(element));
