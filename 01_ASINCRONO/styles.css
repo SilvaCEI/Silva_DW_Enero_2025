@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+
+
+
+.grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 16vw repeat(5, 1fr);
+    grid-template-rows: 16vh (4, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.grid__box {
+    background-size: cover;
+    background-position: center;
+}
+
+.grid__box--A {
+    background-image: url(./IMAGENES/A.jpg);
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid__box--B {
+    background-image: url(./IMAGENES/B.jpg);
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.grid__box--C {
+    background-image: url(./IMAGENES/C.jpg);
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.grid__box--D {
+    background-image: url(./IMAGENES/D.jpg);
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.grid__box--E {
+    background-image: url(./IMAGENES/E.jpg);
+    grid-area: 1 / 5 / 3 / 7;
+}
+
+.grid__box--F {
+    background-image: url(./IMAGENES/F.jpg);
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid__box--G {
+    background-image: url(./IMAGENES/G.jpg);
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.grid__box--H {
+    background-image: url(./IMAGENES/H.jpg);
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.grid__box--I {
+    background-image: url(./IMAGENES/I.jpg);
+    grid-area: 3 / 1 / 5 / 3;
+}
+
+.grid__box--J {
+    background-image: url(./IMAGENES/J.jpg);
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.grid__box--K {
+    background-image: url(./IMAGENES/K.jpg);
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.grid__box--L {
+    background-image: url(./IMAGENES/L.jpg);
+    grid-area: 3 / 5 / 5 / 6;
+}
+
+.grid__box--M {
+    background-image: url(./IMAGENES/M.jpg);
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.grid__box--N {
+    background-image: url(./IMAGENES/N.jpg);
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.grid__box--O {
+    background-image: url(./IMAGENES/O.jpg);
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.grid__box--P {
+    background-image: url(./IMAGENES/P.jpg);
+    grid-area: 4 / 6 / 5 / 7;
+}
+
+.grid__box--Q {
+    background-image: url(./IMAGENES/Q.jpg);
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.grid__box--R {
+    background-image: url(./IMAGENES/R.jpg);
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.grid__box--S {
+    background-image: url(./IMAGENES/S.jpg);
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.grid__box--T {
+    background-image: url(./IMAGENES/T.jpg);
+    grid-area: 5 / 5 / 6 / 6;
+}
+
+.grid__box--V {
+    background-image: url(./IMAGENES/V.jpg);
+    grid-area: 5 / 6 / 6 / 7;
+}
