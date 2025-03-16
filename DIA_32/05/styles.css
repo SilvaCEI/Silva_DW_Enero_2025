@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+button {
+    margin: 20px;
+    height: 60px;
+    width: 150px;
+    border-radius: 7px;
+    background-color: rgb(197, 196, 196);
+    border: 0.3px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(138, 125, 188);
+}
+
+button:active {
+    background-color: rgb(132, 148, 204);
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 205, 208);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.animate1 {
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-name: slidein;
+    transition: all 7s;
+}
+
+@keyframes slidein {
+    from {
+        width: 100px;
+    }
+
+    to {
+        height: 300px;
+        width: 600px;
+    }
+}
