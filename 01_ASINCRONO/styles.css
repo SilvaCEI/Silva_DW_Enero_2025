@@ -4,20 +4,22 @@
     border: 0;
     box-sizing: border-box;
     font-family: Open Sans, sans-serif;
+    font-weight: 100;
+
 }
 
 .nav {
-    height: 65px;
+    height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 30px;
     list-style: none;
 }
 
 .nav__logo {
-    width: 90px;
+    width: 130px;
 }
 
 ul {
@@ -28,9 +30,9 @@ ul {
 
 li {
     list-style: none;
-    margin: 0 5px;
-    font-size: 12px;
-    font-weight: 600;
+    margin: 0 20px;
+    font-size: 14px;
+
 
 }
 
@@ -40,32 +42,34 @@ a {
 }
 
 .active {
-    font-weight: 400;
-    color: #2f2f2f;
+
+    color: darkolivegreen;
 }
 
 .nav__burger {
-    width: 20px;
+    width: 30px;
 }
 
-
-
-
+/*---------------GRID------------------*/
 .grid {
     width: 100vw;
-    height: 100vh;
+    flex: 1; /*--????????--*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 16vw);
+    grid-template-rows: repeat(5, 16vw);
     grid-gap: 5px;
     padding: 5px;
 }
 
 .grid__box {
     background-size: cover;
-    background-position: center;
+    background-position:  center top;
+    transition: background-position 0.3s ease-in;
 }
 
+.grid__box:hover {
+    background-position: center bottom; 
+}
 .grid__box--A {
     background-image: url(./IMAGENES/A.jpg);
     grid-area: 1 / 1 / 2 / 2;
@@ -170,3 +174,70 @@ a {
     background-image: url(./IMAGENES/V.jpg);
     grid-area: 5 / 6 / 6 / 7;
 }
+
+/*------------Footer---------------*/
+
+.footer__elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    width: 100%;
+    margin: 60px 0 ;
+}
+
+.footer__element--description {
+    width: 400px;
+    text-align: center;
+    font-size: 15px;
+    color: #626262;
+    line-height: 2.0
+}
+
+.footer__element--rrss{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__element--icon{
+width: 20px;
+margin: 20px;
+}
+
+.footer__element--politics{
+    color: #626262;
+    text-align: center;
+    font-size: 13px;
+    margin: 15px;
+}
+
+/*--------MEDIA QUERY-------------*/
+
+
+
+/* Pantallas medianas: 3 columnas*/
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 32vw);
+    }
+}
+
+/* Pantallas pequeñas: 2 columnas */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(15, 44vw);
+    }
+}
+
+/* Pantallas muy pequeñas: 1 columna */
+@media (max-width: 400px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+    }
+}
+
+
