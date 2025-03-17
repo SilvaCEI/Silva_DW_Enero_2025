@@ -53,7 +53,7 @@ a {
 /*---------------GRID------------------*/
 .grid {
     width: 100vw;
-    flex: 1; /*--????????--*/
+   /*--????????--*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 16vw);
