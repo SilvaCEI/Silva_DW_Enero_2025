@@ -7,5 +7,3 @@ function handleMoveMouse(e) {
 }
 
 window.addEventListener("mousemove", handleMoveMouse)
-
-/*document.body.addEventListener("mousemove", handleMoveMouse)*/

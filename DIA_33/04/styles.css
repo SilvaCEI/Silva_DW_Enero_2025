@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 20px;
+    height: 60px;
+    width: 150px;
+    border-radius: 7px;
+    background-color: rgb(197, 196, 196);
+    border: 0.3px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: rgb(138, 125, 188);
+}
+
+button:active{
+    background-color: rgb(132, 148, 204);
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition: width 1s;
+}
+
+
+
+@keyframes animacion1 {
+    from{
+        width: 100px;
+        background-color: aqua;
+    }
+
+    to{
+        width: 200px;
+        background-color: crimson;
+    }
+}
+
+
+@keyframes animacion2 {
+    from{
+        transform: rotateX(0deg);
+        background-color: rgb(206, 232, 59);
+    }
+
+    to{
+        transform: rotateX(360deg);
+        background-color: rgb(16, 133, 119);
+}
+}

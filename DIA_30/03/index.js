@@ -23,9 +23,9 @@ function handleCalculator() {
     case "/":
       r = value1 / value2;
       break;
-      default:
-        r = "Error";
-        break;
+    default:
+      r = "Error";
+      break;
   }
- result.innerHTML = r;
+  result.innerHTML = r;
 }
