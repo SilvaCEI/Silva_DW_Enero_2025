@@ -53,7 +53,6 @@ a {
 /*---------------GRID------------------*/
 .grid {
     width: 100vw;
-   /*--????????--*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 16vw);
@@ -445,8 +444,8 @@ margin: 20px;
 /* Pantallas muy pequeñas: 1 columna */
 @media (max-width: 400px) {
     .grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(21, 1fr);
+        grid-template-columns: repeat(1, 100vw auto);
+        grid-template-rows: repeat(21, 100vw);
     }
 
     .grid__box--A {
@@ -456,17 +455,17 @@ margin: 20px;
     
     .grid__box--B {
         background-image: url(./IMAGENES/B.jpg);
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: 2 / 1 / 3 / 2;
     }
     
     .grid__box--C {
         background-image: url(./IMAGENES/C.jpg);
-        grid-area: 1 / 3 / 2 / 4;
+        grid-area: 3 / 1 / 5 / 2;
     }
     
     .grid__box--D {
         background-image: url(./IMAGENES/D.jpg);
-        grid-area: 1 / 4 / 2 / 5;
+        grid-area: 5 / 1 / 6 /2;
     }
     
     .grid__box--E {

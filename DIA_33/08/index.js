@@ -7,15 +7,14 @@ function getColor() {
 }
 
 
-const td = document.querySelectorAll(".table td")
+let td = document.querySelectorAll(".table td")
 const bt = document.querySelector("#bt2");
 
 
 
 function handleEjercicio7() {
-    td.forEach(td =>
-        td.style.backgroundColor = getColor()
-    );
+    let n = getRndInteger(0, td.length - 1)
+    td[n].style.backgroundColor = "red";
 
 }
 
