@@ -222,6 +222,111 @@ margin: 20px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(10, 32vw);
     }
+
+    .grid__box--A {
+        background-image: url(./IMAGENES/A.jpg);
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .grid__box--B {
+        background-image: url(./IMAGENES/B.jpg);
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .grid__box--C {
+        background-image: url(./IMAGENES/C.jpg);
+        grid-area: 1 / 3 / 3 / 4;
+    }
+    
+    .grid__box--D {
+        background-image: url(./IMAGENES/D.jpg);
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .grid__box--E {
+        background-image: url(./IMAGENES/E.jpg);
+        grid-area: 3 / 2 / 5 / 4;
+    }
+    
+    .grid__box--F {
+        background-image: url(./IMAGENES/F.jpg);
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .grid__box--G {
+        background-image: url(./IMAGENES/G.jpg);
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .grid__box--H {
+        background-image: url(./IMAGENES/H.jpg);
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .grid__box--I {
+        background-image: url(./IMAGENES/I.jpg);
+        grid-area: 5 / 2 / 7 / 4;
+    }
+    
+    .grid__box--J {
+        background-image: url(./IMAGENES/J.jpg);
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    
+    .grid__box--K {
+        background-image: url(./IMAGENES/K.jpg);
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    
+    .grid__box--L {
+        background-image: url(./IMAGENES/L.jpg);
+        grid-area: 7 / 2 / 9 / 3;
+    }
+    
+    .grid__box--M {
+        background-image: url(./IMAGENES/M.jpg);
+        grid-area: 7 / 3 / 8 / 4;
+    }
+    
+    .grid__box--N {
+        background-image: url(./IMAGENES/N.jpg);
+        grid-area: 8 / 3 / 9 / 4;
+    }
+    
+    .grid__box--O {
+        background-image: url(./IMAGENES/O.jpg);
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    
+    .grid__box--P {
+        background-image: url(./IMAGENES/P.jpg);
+        grid-area: 8 / 1 / 9 / 2;
+    }
+    
+    .grid__box--Q {
+        background-image: url(./IMAGENES/Q.jpg);
+        grid-area: 9 / 2 / 10 / 4;
+    }
+    
+    .grid__box--R {
+        background-image: url(./IMAGENES/R.jpg);
+        grid-area: 10 / 2 / 11 / 3;
+    }
+    
+    .grid__box--S {
+        background-image: url(./IMAGENES/S.jpg);
+        grid-area: 9 / 1 / 10 / 2;
+    }
+    
+    .grid__box--T {
+        background-image: url(./IMAGENES/T.jpg);
+        grid-area: 10 / 1 / 11 / 2;
+    }
+    
+    .grid__box--V {
+        background-image: url(./IMAGENES/V.jpg);
+        grid-area: 10 / 3 / 11 / 4;
+    }
 }
 
 /* Pantallas pequeñas: 2 columnas */
@@ -230,6 +335,111 @@ margin: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(15, 44vw);
     }
+
+    .grid__box--A {
+        background-image: url(./IMAGENES/A.jpg);
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .grid__box--B {
+        background-image: url(./IMAGENES/B.jpg);
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .grid__box--C {
+        background-image: url(./IMAGENES/C.jpg);
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    
+    .grid__box--D {
+        background-image: url(./IMAGENES/D.jpg);
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .grid__box--E {
+        background-image: url(./IMAGENES/E.jpg);
+        grid-area: 4 / 1 / 6 / 3;
+    }
+    
+    .grid__box--F {
+        background-image: url(./IMAGENES/F.jpg);
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    
+    .grid__box--G {
+        background-image: url(./IMAGENES/G.jpg);
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    
+    .grid__box--H {
+        background-image: url(./IMAGENES/H.jpg);
+        grid-area: 6 / 2 / 7 / 3;
+    }
+    
+    .grid__box--I {
+        background-image: url(./IMAGENES/I.jpg);
+        grid-area: 7 / 1 / 9 / 3;
+    }
+    
+    .grid__box--J {
+        background-image: url(./IMAGENES/J.jpg);
+        grid-area: 9 / 2 / 10 / 3;
+    }
+    
+    .grid__box--K {
+        background-image: url(./IMAGENES/K.jpg);
+        grid-area: 9 / 1 / 10 / 2;
+    }
+    
+    .grid__box--L {
+        background-image: url(./IMAGENES/L.jpg);
+        grid-area: 10 / 1 / 12 / 2;
+    }
+    
+    .grid__box--M {
+        background-image: url(./IMAGENES/M.jpg);
+        grid-area: 10 / 2 / 11 / 3;
+    }
+    
+    .grid__box--N {
+        background-image: url(./IMAGENES/N.jpg);
+        grid-area: 12 / 1 / 13 / 2;
+    }
+    
+    .grid__box--O {
+        background-image: url(./IMAGENES/O.jpg);
+        grid-area: 11 / 2 / 12 / 3;
+    }
+    
+    .grid__box--P {
+        background-image: url(./IMAGENES/P.jpg);
+        grid-area: 12 / 2 / 13 / 3;
+    }
+    
+    .grid__box--Q {
+        background-image: url(./IMAGENES/Q.jpg);
+        grid-area: 13 / 1 / 14 / 3;
+    }
+    
+    .grid__box--R {
+        background-image: url(./IMAGENES/R.jpg);
+        grid-area: 14 / 2 / 15 / 3;
+    }
+    
+    .grid__box--S {
+        background-image: url(./IMAGENES/S.jpg);
+        grid-area: 14 / 1 / 15 / 2;
+    }
+    
+    .grid__box--T {
+        background-image: url(./IMAGENES/T.jpg);
+        grid-area: 15 / 2 / 16 / 3;
+    }
+    
+    .grid__box--V {
+        background-image: url(./IMAGENES/V.jpg);
+        grid-area: 15 / 1 / 16 / 2;
+    }
 }
 
 /* Pantallas muy pequeñas: 1 columna */
@@ -237,6 +447,111 @@ margin: 20px;
     .grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(21, 1fr);
+    }
+
+    .grid__box--A {
+        background-image: url(./IMAGENES/A.jpg);
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .grid__box--B {
+        background-image: url(./IMAGENES/B.jpg);
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .grid__box--C {
+        background-image: url(./IMAGENES/C.jpg);
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    .grid__box--D {
+        background-image: url(./IMAGENES/D.jpg);
+        grid-area: 1 / 4 / 2 / 5;
+    }
+    
+    .grid__box--E {
+        background-image: url(./IMAGENES/E.jpg);
+        grid-area: 1 / 5 / 2 / 6;
+    }
+    
+    .grid__box--F {
+        background-image: url(./IMAGENES/F.jpg);
+        grid-area: 1 / 6 / 2 / 7;
+    }
+    
+    .grid__box--G {
+        background-image: url(./IMAGENES/G.jpg);
+        grid-area: 1 / 7 / 2 / 8;
+    }
+    
+    .grid__box--H {
+        background-image: url(./IMAGENES/H.jpg);
+        grid-area: 1 / 8 / 2 / 9;
+    }
+    
+    .grid__box--I {
+        background-image: url(./IMAGENES/I.jpg);
+        grid-area: 1 / 9 / 2 / 10;
+    }
+    
+    .grid__box--J {
+        background-image: url(./IMAGENES/J.jpg);
+        grid-area: 1 / 11 / 2 / 12;
+    }
+    
+    .grid__box--K {
+        background-image: url(./IMAGENES/K.jpg);
+        grid-area: 1 / 10 / 2 / 11;
+    }
+    
+    .grid__box--L {
+        background-image: url(./IMAGENES/L.jpg);
+        grid-area: 1 / 12 / 2 / 13;
+    }
+    
+    .grid__box--M {
+        background-image: url(./IMAGENES/M.jpg);
+        grid-area: 1 / 13 / 2 / 14;
+    }
+    
+    .grid__box--N {
+        background-image: url(./IMAGENES/N.jpg);
+        grid-area: 1 / 15 / 2 / 16;
+    }
+    
+    .grid__box--O {
+        background-image: url(./IMAGENES/O.jpg);
+        grid-area: 1 / 14 / 2 / 15;
+    }
+    
+    .grid__box--P {
+        background-image: url(./IMAGENES/P.jpg);
+        grid-area: 1 / 16 / 2 / 17;
+    }
+    
+    .grid__box--Q {
+        background-image: url(./IMAGENES/Q.jpg);
+        grid-area: 1 / 17 / 2 / 18;
+    }
+    
+    .grid__box--R {
+        background-image: url(./IMAGENES/R.jpg);
+        grid-area: 1 / 19 / 2 / 20;
+    }
+    
+    .grid__box--S {
+        background-image: url(./IMAGENES/S.jpg);
+        grid-area: 1 / 18 / 2 / 19;
+    }
+    
+    .grid__box--T {
+        background-image: url(./IMAGENES/T.jpg);
+        grid-area: 1 / 21 / 2 / 22;
+    }
+    
+    .grid__box--V {
+        background-image: url(./IMAGENES/V.jpg);
+        grid-area: 1 / 20 / 2 / 21;
     }
 }
 
