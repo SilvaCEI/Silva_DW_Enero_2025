@@ -11,7 +11,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-ul li {
+ul, ol {
     list-style: none;
 }
 
@@ -25,7 +25,6 @@ ul li {
     text-decoration: none;
     padding: 10px 12px;
     display: block;
-
 }
 
 .nav li a:hover {
@@ -39,7 +38,7 @@ ul li {
 }
 
 .nav li:hover>ul {
-    position: block;
+    display: block;
 }
 
 .nav li ul li{
