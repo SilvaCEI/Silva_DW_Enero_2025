@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  height: 80vh;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.parallax:nth-child(1) {
+  background-image: url(imagenes/beige.jpg);
+}
+
+.parallax:nth-child(2) {
+  background-image: url(imagenes/pink.jpg);
+}
