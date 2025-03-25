@@ -1,25 +1,14 @@
-let sliderIndex = 1; showSlider(slideIndex);
+const carousel = document.getElementById('carousel');
+const totalItems = 4; // Número de imágenes
+let angle = 0;
+const anglePerItem = 360 / totalItems; // 90° por imagen
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+document.querySelector('.next').addEventListener('click', () => {
+    angle -= anglePerItem;
+    carousel.style.transform = `rotateY(${angle}deg)`;
+});
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("my-slides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += "active";
-}
+document.querySelector('.prev').addEventListener('click', () => {
+    angle += anglePerItem;
+    carousel.style.transform = `rotateY(${angle}deg)`;
+});

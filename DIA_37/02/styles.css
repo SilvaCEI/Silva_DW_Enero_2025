@@ -58,6 +58,10 @@
     height: 100%;
     transition: all .55s;
 }
+.carrousel img {
+    width: 100%;
+    object-fit: cover;
+  }
 
 #carrouselr-container #carrouselr .carrousel {
     height: 90%;
@@ -72,6 +76,20 @@
     color: white;
     font-size: 150px;
 }
+
+
+@keyframes fade {
+    from {
+        opacity: .4;
+        transform: rotateY(90deg)
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
 
 @media only screen and (min-width: 1100px) {
     #carrouselr-container #carrouselr .carrousel {
