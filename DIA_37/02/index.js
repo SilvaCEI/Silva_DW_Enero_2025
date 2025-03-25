@@ -1,56 +1,70 @@
-var container = document.getElementById('container');
-var carrousel = document.getElementById('carrousel');
-var carrousels = document.getElementsByClassName('carrousel').length;
-var buttons = document.getElementsByClassName('btn');
+let container = document.getElementById("container");
+let carrouselr = document.getElementById('carrouselr');
+let carrousels = document.getElementsByClassName('carrousel').length;
+let buttons = document.getElementsByClassName("btn");
 
-var currentPosition = 0;
-var currentMargin = 0;
-var carrouselPerPage = 0;
-var carrouselCount = carrousels - carrouselPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
+let currentPosition = 0;
+let currentMargin = 0;
+let carrouselsPerPage = 0;
+let carrouselsCount = carrousels - carrouselsPerPage;
+let containerWidth = container.offsetWidth;
+let prevKeyActive = false;
+let nextKeyActive = true;
 
-window.addEventListener("resize", checkWidth);
 
-function checkWidth() {
+window.addEventListener("resize", checkwidth);
+
+function checkwidth() {
     containerWidth = container.offsetWidth;
     setParams(containerWidth);
 }
 
 function setParams(w) {
     if (w < 551) {
-        carrouselPerPage = 1;
+        carrouselsPerPage = 1;
     } else {
         if (w < 901) {
-            carrouselPerPage = 2;
+            carrouselsPerPage = 2;
         } else {
             if (w < 1101) {
-                carrouselPerPage = 3;
+                carrouselsPerPage = 3;
             } else {
-                carrouselPerPage = 4;
+                carrouselsPerPage = 4;
             }
         }
     }
 
-    carrouselCount = carrousels - carrouselPerPage;
-    if (currentPosition > carrouselCount) {
-        currentPosition -= carrouselPerPage;
-    }
+    carrouselsCount = carrousels - carrouselsPerPage;
+    if (currentPosition > carrouselsCount) {
+        currentPosition -= carrouselsPerPage;
+    };
 
-    currentMargin = - currentPosition * (100 / carrouselPerPage);
-    carrousel.style.marginLeft = currentMargin + "%";
-
+    currentMargin = - currentPosition * (100 / carrouselsPerPage);
+    carrouselr.style.marginLeft = currentMargin + '%';
     if (currentPosition > 0) {
         buttons[0].classList.remove('inactive');
     }
 
-    if (currentPosition < carrouselCount) {
+    if (currentPosition < carrouselsCount) {
         buttons[1].classList.remove('inactive');
     }
 
-    if (currentPosition >= carrouselCount) {
+    if (currentPosition >= carrouselsCount) {
         buttons[1].classList.add('inactive');
+    }
+}
+
+function carrouselLeft() {
+    if (currentPosition != carrouselsCount) {
+        carrouselr.style.marginLeft = currentMargin - (100 / carrouselsPerPage) + '%';
+        currentMargin -= (100 / carrouselsPerPage);
+        currentPosition++;
+    };
+    if (currentPosition == carrouselsCount) {
+        buttons[1].classList.add('inactive');
+    }
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
     }
 }
 
@@ -58,32 +72,15 @@ setParams(container.offsetWidth);
 
 function carrouselRight() {
     if (currentPosition != 0) {
-        carrousel.style.marginLeft = currentMargin + (100 / carrouselPerPage) + "%";
-        currentMargin += (100 / carrouselPerPage);
+        carrouselr.style.marginLeft = currentMargin + (100 / carrouselsPerPage) + '%';
+        currentMargin += (100 / carrouselsPerPage);
         currentPosition--;
+    };
 
-        if (currentPosition == 0) {
-            buttons[0].classList.add('inactive');
-        }
-
-        if (currentPosition < carrouselCount) {
-            buttons[1].classList.remove('inactive');
-        }
+    if (currentPosition === 0) {
+        buttons[0].classList.add('inactive');
     }
-}
-
-function carrouselLeft() {
-    if (currentPosition != carrouselCount) {
-        carrousel.style.marginLeft = currentMargin - (100 / carrouselPerPage) + "%";
-        currentMargin -= (100 / carrouselPerPage);
-        currentPosition++;
-
-        if (currentPosition == carrouselCount) {
-            buttons[1].classList.add('inactive');
-        }
-
-        if (currentPosition > 0) {
-            buttons[0].classList.remove('inactive');
-        }
+    if (currentPosition < carrouselsCount) {
+        buttons[1].classList.remove('inactive');
     }
-}
+};
