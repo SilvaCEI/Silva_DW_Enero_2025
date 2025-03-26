@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #e8e3d8;
+    color: #4d3b21;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #9f8b70;
+}
+
+#container {
+    background: #b3a288;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
