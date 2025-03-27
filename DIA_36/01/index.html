@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Draggable Carousel Slider | CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      <div class="carousel">
-        <img src="images/img-1.jpg" alt="img" draggable="false" />
-        <img src="images/img-2.jpg" alt="img" draggable="false" />
-        <img src="images/img-3.jpg" alt="img" draggable="false" />
-        <img src="images/img-4.jpg" alt="img" draggable="false" />
-        <img src="images/img-5.jpg" alt="img" draggable="false" />
-        <img src="images/img-6.jpg" alt="img" draggable="false" />
-        <img src="images/img-7.jpg" alt="img" draggable="false" />
-        <img src="images/img-8.jpg" alt="img" draggable="false" />
-        <img src="images/img-9.jpg" alt="img" draggable="false" />
-      </div>
-      <i id="right" class="fa-solid fa-angle-right"></i>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./imagenes/burros.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/cat.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/cobayas.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/dog.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/flamenco.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/frog.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/monitos.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/tortuga.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imagenes/dog2.jpg" alt=""></div>
     </div>
-  </body>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  
+</body>
+
 </html>
