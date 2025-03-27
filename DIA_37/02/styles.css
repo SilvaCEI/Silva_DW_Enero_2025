@@ -58,10 +58,52 @@
     height: 100%;
     transition: all .55s;
 }
-.carrousel img {
-    width: 100%;
-    object-fit: cover;
-  }
+
+.carrousel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrousel:nth-child(1) {
+    background-image: url(imagenes/burros.jpg);
+}
+
+.carrousel:nth-child(2) {
+    background-image: url(imagenes/cat.jpg);
+}
+
+.carrousel:nth-child(3) {
+    background-image: url(imagenes/cobayas.jpg);
+}
+
+.carrousel:nth-child(4) {
+    background-image: url(imagenes/dog.jpg);
+}
+
+.carrousel:nth-child(5) {
+    background-image: url(imagenes/flamenco.jpg);
+}
+
+.carrousel:nth-child(6) {
+    background-image: url(imagenes/frog.jpg);
+}
+
+.carrousel:nth-child(7) {
+    background-image: url(imagenes/dog2.jpg);
+}
+
+.carrousel:nth-child(8) {
+    background-image: url(imagenes/monitos.jpg);
+}
+
+.carrousel:nth-child(9) {
+    background-image: url(imagenes/suricato.jpg);
+}
+
+.carrousel:nth-child(10) {
+    background-image: url(imagenes/tortuga.jpg);
+}
 
 #carrouselr-container #carrouselr .carrousel {
     height: 90%;
