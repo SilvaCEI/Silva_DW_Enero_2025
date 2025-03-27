@@ -8,7 +8,7 @@ function clickButton(e) {
     fetch(`https://api.themoviedb.org/3/search/movie?include_adult=false&language=es-ES&query=${search.value}`, {
         method: "GET",
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NTNUUwMzA0NDUzNz9MGNlN1VY3OGY5ZJUwOThj"
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NTUwMzA0NDUzNzg1MGNlNWY3OGY5ZjUwOThjNzVjNCIsIm5iZiI6MTczNDQ1ODExMC42MTksInN1YiI6IjY3NjFiYWZlZWQyNmE5ZDJkOGRmZTExMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ok29UicAMLyCxOTRSK5GZw4rG3-7Xk6DW1pLZXGtMMU"
         }
     })
     .then(data => data.json())
