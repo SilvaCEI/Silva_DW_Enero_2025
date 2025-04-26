@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title> Reserva </title>
+</head>
+
+<body>
+
+    <main class="main__reserva">
+        <div class="main__tittle">
+            <h1>Reserva con nosotros</h1>
+        </div>
+        <section class="main__formulario--box">
+            <form method="post" action="url/y/tal">
+                <label for="name">Nombre y apellidos*</label>
+                <input type="text" id="name" class="text_box" name="name" required>
+
+                <label for="email">Correo electrónico*</label>
+                <input type="email" id="email" class="text_box" name="email" placeholder="name@example.com" required>
+
+                <label for="phone">Teléfono*</label>
+                <input type="tel" id="phone" class="text_box" name="phone" maxlength="9" required>
+
+                <label for="date">Fecha de reserva*</label>
+                <input type="date" id="date" class="text_box" name="date" required>
+
+
+                <label for="hora">Hora de reserva*</label>
+                <select name="hora" id="hora" class="text_box" required>
+                    <option value="">-- Selecciona una hora --</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                </select>
+
+                <label for="text">Mensaje</label>
+                <textarea class="text_area text_box" id="reserva" name="reserva" rows="5" 
+                        placeholder="Cuentanos aquí lo que necesites"></textarea>
+
+                <input type="submit" class="button__form" value="Enviar">
+            </form>
+
+            <!--el modal que se genera al envia el formulario -->
+            <div id="modal-reserva" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <p class="mensaje-exito">
+                        Su solicitud de reserva ha sido enviada
+                    </p>
+                    <p class="mensaje-info">
+                        Recuerde que su reserva aún no está confirmada, recibirá un correo de confirmación
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title> Contactos </title>
+</head>
+
+<body>
+
+    <main class="main__contacts">
+        <div class="main__tittle">
+            <h1>Contáctanos</h1>
+        </div>
+        <div class="main__content--contacts">
+
+            <div class="main__formulario--box">
+                <form method="post" action="url/y/tal">
+                    <label for="name">Nombre y apellidos*</label>
+                    <input type="text" id="name" class="text_box" name="name" required>
+
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" id="email" class="text_box" name="email" placeholder="name@example.com"
+                        required>
+
+                    <label for="phone">Teléfono*</label>
+                    <input type="tel" id="phone" class="text_box" name="phone" maxlength="9" required>
+
+                    <label for="text">Mensaje*</label>
+                    <textarea class="text_area text_box" id="comentarios" name="comentarios" rows="5" required
+                        placeholder="Tu mensaje"></textarea>
+
+                    <input type="submit" class="button__form" value="Enviar">
+                </form>
+
+                <!--el modal que se genera al envia el formulario -->
+                <div id="modal-reserva" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <p class="mensaje-exito">
+                            Hemos recibido su mensaje
+                        </p>
+                        <p class="mensaje-info">
+                            Nos pondremos en contacto con usted con la mayor brevedad posible
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main__contacts--buttons">
+
+                <div >
+                    <a  class="contact__button" href="#">Llámanos por teléfono</a>
+                </div>
+                <div> <a  class="contact__button" href="#">Escríbenos un WhatsApp</a></div>
+
+                <div class="contact__buttons--rrss">
+                    <div><a class="button__rrss" href="#">Facebook</a></div>
+                    <div><a class="button__rrss"  href="#">Instagram</a></div>
+                    
+                </div>
+                <div class="contact__info">
+                    <p>Siempre estamos a tu disposición; ya sea por teléfono, WhatsApp o en persona, te garantizamos una respuesta a tus consultas en un máximo de 24 horas durante días laborables.</p>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
