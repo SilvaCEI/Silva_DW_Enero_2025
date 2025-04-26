@@ -72,6 +72,14 @@ li {
     color: var(--blanco-crema);
 }
 
+.header__link.active{
+    color: var(--azul-grisaceo);
+}
+
+.header__link:hover{
+    color: var(--azul-grisaceo);
+}
+
 /*----------------- COMIENZA EL INDEX -------------------*/
 
 .header__index {
