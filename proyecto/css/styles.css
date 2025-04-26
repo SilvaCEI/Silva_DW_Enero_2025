@@ -1,0 +1,813 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    font-weight: 500;
+
+}
+
+:root {
+    --verde-salvia: #BADBC3;
+    --blanco-crema: #F5F5F0;
+    --azul-grisaceo: #435B66;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-complementaria: 'Playfair Display', serif;
+    --verde-salvia-transparencia: rgba(186, 219, 195, 0.8);
+}
+
+body {
+    background-color: var(--blanco-crema);
+}
+
+/*------- HEADER ---------*/
+
+header {
+    padding: 15px;
+}
+
+.nav__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.204);
+    color: var(--blanco-crema);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+li {
+    margin: 0 20px 0;
+}
+
+.button__reserva{
+    background-color: var(--azul-grisaceo);
+   padding: 5px 7px;
+   border-radius: 7px;
+}
+
+.button__reserva:hover{
+    background-color: var(--verde-salvia);
+    color: var(--azul-grisaceo);
+   
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--blanco-crema);
+}
+
+/*----------------- COMIENZA EL INDEX -------------------*/
+
+.header__index {
+    background-image: url("../contenido-optimizado/imagenes/comida/background-index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main__tittle {
+    text-align: center;
+    margin: 20px;
+    color: var(--blanco-crema);
+}
+
+.main__descriptor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30px;
+    padding: 50px 40px;
+
+}
+
+.main__descriptor--elements {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.descriptor--text {
+    font-size: 4rem;
+    font-family: var(--fuente-complementaria);
+    color: var(--azul-grisaceo);
+}
+
+.descriptor--button {
+    width: 20vw;
+    height: 7vh;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--azul-grisaceo);
+    color: var(--blanco-crema);
+}
+
+.descriptor--button:hover {
+    background-color: var(--verde-salvia);
+    color: var(--azul-grisaceo);
+
+}
+
+
+.descriptor--photo {
+    width: 40vw;
+    border-radius: 7px;
+}
+
+
+
+/*--------SECCIÓN DE COMENTARIOS DE CLIENTES----------*/
+.main__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: var(--verde-salvia);
+    border-radius: 7px;
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.main__slider>h2 {
+    margin: 30px;
+    color: var(--azul-grisaceo);
+}
+
+.main__slider--box {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+
+}
+
+
+.comentarios {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 7px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.comentario {
+    flex: 0 0 auto;
+    width: 20vw;
+    margin: 1em 0.5em 1em;
+    background: var(--blanco-crema);
+    padding: 1.5em;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+    font-style: italic;
+    text-align: center;
+    color: black;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.autor {
+    margin: 2em 0;
+    font-weight: bold;
+    color: black;
+}
+
+.form__comentarios--button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.form__comentarios--link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--azul-grisaceo);
+    font-size: 1rem;
+    border-radius: 7px;
+    background-color: var(--verde-salvia);
+    margin: 30px;
+    height: 7vh;
+    cursor: pointer;
+}
+
+.form__comentarios--link:hover {
+    color: var(--blanco-crema);
+    background-color: var(--azul-grisaceo);
+
+}
+
+.main__address {
+    background-color: var(--blanco-crema);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0;
+    border-radius: 7px;
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.main__address--maps {
+    padding: 70px 70px;
+    border-radius: 7px;
+
+}
+
+.main__address--write {
+    align-items: center;
+    padding: 40px 50px;
+    color: var(--azul-grisaceo);
+}
+
+.address--write {
+    font-size: 2rem;
+
+}
+
+.address--city {
+    font-size: 1.7rem;
+
+}
+
+.address--info {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.address--text {
+    width: 25vw;
+}
+
+
+/*--------------- FOOTER ----------------*/
+footer {
+    background-color: var(--azul-grisaceo);
+    color: var(--blanco-crema);
+    padding: 1rem 2rem;
+}
+
+/* Contenido footer */
+.footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+/* Titulos del footer*/
+.footer__title {
+    font-size: 1.25rem;
+    margin: 0.75rem;
+    color: #fff;
+}
+
+/* Información de contacto footer */
+.footer__text {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Características listas footer */
+.footer__list,
+.footer__social-list {
+    list-style: none;
+    }
+
+.footer__list li,
+.footer__social-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Links del footer */
+.footer__link {
+    font-size: 0.7rem;
+}
+
+.footer__link,
+.footer__social-link {
+    color: var(--blanco-crema);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__link:hover,
+.footer__social-link:hover {
+    color: var(--verde-salvia);
+}
+
+
+/* Textos lgales */
+.footer__legal {
+    border-top: 0.1px solid var(--blanco-crema);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--blanco-crema);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__copy {
+    margin: 1rem 0;
+}
+
+
+
+/*---------------- SOBRE NOSOTROS ---------------------*/
+
+.main__grid {
+    width: 100%;
+    padding: 7px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 10vw);
+}
+
+.main__grid--item {
+    background-size: cover;
+    background-position: center top;
+    border-radius: 7px;
+    color: var(--azul-grisaceo);
+}
+
+.a {
+    grid-area: 1 / 1 / 4 / 2;
+    align-content: center;
+    font-family: var(--fuente-complementaria);
+    font-size: 2rem;
+}
+
+.b {
+    background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
+    background-position: center;
+    grid-area: 2 / 2 / 5 / 5;
+}
+
+.c {
+    grid-area: 5 / 2 / 6 / 4;
+    padding: 10px 0;
+}
+
+.d {
+    background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
+    grid-area: 6 / 1 / 9 / 3;
+}
+
+.e {
+    grid-area: 8 / 3 / 9 / 5;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.f {
+    background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
+    background-position: center;
+    grid-area: 10 / 3 / 14 / 5;
+}
+
+.g {
+    grid-area: 10 / 1 / 11 / 2;
+}
+
+.h {
+    background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
+    grid-area: 15 / 1 / 18 / 4;
+}
+
+.i {
+    grid-area: 17 / 4 / 18 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 10px;
+
+}
+
+.j {
+    background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
+    background-position: center;
+    grid-area: 19 / 2 / 21 / 5;
+}
+
+/*------ TOGGLE PANEL -----*/
+.main__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 3em;
+    color: var(--azul-grisaceo);
+}
+
+.toggle {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--verde-salvia);
+}
+
+.toggle .bloque {
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid var(--azul-grisaceo);
+    border-radius: 7px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.toggle .h2 {
+
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.toggle .contenido {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+
+}
+
+
+.toggle .bloque.activo .contenido {
+    border-top: 1px solid var(--blanco-crema);
+    height: 6em;
+    padding: 1em;
+}
+
+
+/*---------- FORMULARIO RESERVA -------------*/
+
+.main__reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../contenido-optimizado/imagenes/comida/background-reserva.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+/*-------CARACTERÍSTICAS GENERALES DEL FORMULARIO--------*/
+
+.main__formulario--box {
+    background-color: var(--blanco-crema);
+    border-radius: 7px;
+    margin: 30px 0;
+    color: var(--azul-grisaceo);
+
+}
+
+form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+input,
+select {
+    margin: 5px 0 15px 0;
+    color: var(--azul-grisaceo);
+}
+
+.text_box {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.text_area {
+    height: 100px;
+    border-radius: 4px;
+}
+
+.button__form {
+    background-color: var(--azul-grisaceo);
+    color: var(--blanco-crema);
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.button__form:hover {
+    background-color: var(--verde-salvia);
+    color: var(--azul-grisaceo);
+}
+
+.modal {
+    display: none;
+    /* oculto por defecto */
+    position: fixed;
+    /* se fija al viewport, no al documento */
+    top: 25%;
+    left: 30%;
+    /* cubre desde la esquina superior izquierda */
+    width: 40vw;
+    /* ancho completo */
+    height: 40vh;
+    /* alto completo */
+    background: var(--azul-grisaceo);
+
+    align-items: center;
+    /* centrado vertical */
+    justify-content: center;
+    /* centrado horizontal */
+    z-index: 1;
+    /* por encima de todo */
+    border-radius: 7px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.8em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--blanco-crema);
+}
+
+.mensaje-exito {
+    font-size: 1.1rem;
+    color: var(--verde-salvia);
+    margin-bottom: 0.5em;
+}
+
+.mensaje-info {
+    font-size: 0.85rem;
+    color: var(--blanco-crema);
+}
+
+.mensaje-exito,
+.mensaje-info {
+    text-align: center;
+}
+
+
+/*-------- PÁGINA DE CONTACTOS -------*/
+
+.main__contacts {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../contenido-optimizado/imagenes/comida/background-contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main__content--contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+
+}
+
+.main__contacts--buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 7px;
+
+}
+
+.contact__button,
+.button__rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 80px;
+    background-color: var(--verde-salvia);
+    color: var(--azul-grisaceo);
+
+}
+
+
+.contact__button {
+    width: 30vw;
+    margin: 10px 0;
+}
+
+.contact__button:hover {
+    color: var(--blanco-crema);
+    background-color: var(--azul-grisaceo)
+}
+
+.contact__buttons--rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.button__rrss {
+    background-color: var(--verde-salvia);
+    width: 14.2vw;
+    color: var(--azul-grisaceo);
+
+}
+
+.button__rrss:hover {
+    color: var(--blanco-crema);
+    background-color: var(--azul-grisaceo)
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0;
+    text-align: center;
+    width: 30vw;
+    color: var(--azul-grisaceo);
+}
+
+
+
+
+/*----------FORMULARIO PARA COMENTARIOS DE CLIENTES-----------*/
+.main__feedback {
+    background-image: url("../contenido-optimizado/imagenes/comida/background-feedback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.main__feedback--cliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*------------ CARTA RESTAURANTE ------------*/
+
+.carta__menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.carta__menu-item {
+    cursor: pointer;
+    border: .5px solid var(--azul-grisaceo);
+    border-radius: 3px;
+    padding: 1em 15em;
+    color: var(--azul-grisaceo);
+    transition: background-color .3s, color .3s;
+    font-size: 1em;
+
+}
+
+.carta__menu-item:hover {
+    color: var(--azul-grisaceo);
+    background-color: var(--verde-salvia);
+}
+
+/* Modificador para el estado activo */
+.carta__menu-item.active {
+    color: var(--blanco-crema);
+    background-color: var(--azul-grisaceo);
+}
+
+.carta__menu-item.active:hover {
+    color: var(--verde-salvia);
+}
+
+/* Contenedor de contenido */
+.carta__contenido {
+    padding: 2vw;
+    text-align: justify;
+}
+
+/* Cada sección (div) */
+.carta__seccion {
+    display: none;
+}
+
+
+.carta__contenido{
+    background-image: url("../contenido-optimizado/imagenes/comida/background-carta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 130vh;
+    border-radius: 10px;
+
+}
+/* Estado activo de la sección */
+.carta__seccion.active {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verde-salvia-transparencia);
+    border-radius: 7px;
+    
+}
+
+/*---------- EMPIEZA EL CON TENIDO DE LA CARTA -----------*/
+
+.carta__categoria {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--azul-grisaceo);
+  margin: 3rem 0 1rem;
+  padding: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.carta__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 0.4px solid var(--blanco-crema);
+  transition: background 0.3s;
+}
+
+.carta__item:last-child {
+  border-bottom: none;
+  margin: 0 0 1rem;
+}
+
+
+.carta__nombre {
+  color: var(--azul-grisaceo);
+  font-size: 1.1rem;
+  flex: 1;
+  text-align: left;
+}
+
+.carta__precio {
+  color: var(--blanco-crema);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 1rem 0;
+}
