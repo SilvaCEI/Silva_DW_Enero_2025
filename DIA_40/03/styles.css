@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -57,4 +58,11 @@ input{
     padding: 1em 1em 1em 1em;
     border: 2px solid black;
     border-radius: 12px;
+=======
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+>>>>>>> 1a53353b49ae036dca578cb5fa5452910ca73868
 }
