@@ -43,6 +43,10 @@ header {
     color: var(--blanco-crema);
 }
 
+.header__logotipo{
+    height: 33px;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -73,6 +77,11 @@ li {
 }
 
 .header__link.active{
+    color: var(--azul-grisaceo);
+}
+
+.header__link.button__reserva.active{
+    background-color: var(--verde-salvia);
     color: var(--azul-grisaceo);
 }
 
@@ -387,6 +396,7 @@ footer {
     align-content: center;
     font-family: var(--fuente-complementaria);
     font-size: 2rem;
+    padding: 0 1rem 0 0;
 }
 
 .b {
@@ -402,7 +412,7 @@ footer {
 
 .d {
     background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
-    grid-area: 6 / 1 / 9 / 3;
+    grid-area: 6 / 2 / 9 / 3;
 }
 
 .e {
@@ -441,6 +451,11 @@ footer {
     background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
     background-position: center;
     grid-area: 19 / 2 / 21 / 5;
+}
+
+.grid-logotipo{
+    grid-area: 12 / 1 / 13 / 4;
+
 }
 
 /*------ TOGGLE PANEL -----*/
@@ -508,10 +523,12 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    border-radius: .625rem .625rem 0 0;
 
 }
 
 /*-------CARACTERÍSTICAS GENERALES DEL FORMULARIO--------*/
+
 
 .main__formulario--box {
     background-color: var(--blanco-crema);
@@ -616,6 +633,7 @@ select {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    border-radius: .625rem .625rem 0 0;
 }
 
 .main__content--contacts {
@@ -701,6 +719,7 @@ select {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    border-radius: .625rem .625rem 0 0;
 }
 
 .main__feedback--cliente {
@@ -818,4 +837,50 @@ select {
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0 1rem 0;
+}
+
+
+/*----------TEXTOS LEGALES----------*/
+
+/*------POLITICA DE PRIVACIDAD----*/
+.content__legal {
+    padding: 2rem 4rem;
+}
+.content__legal--h1 {
+    
+    color: var(--azul-grisaceo);
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--azul-grisaceo);
+    padding: 0 0 .625rem;
+}
+
+.content__legal--h2 {
+    
+    font-size: 1.8rem;
+    color: var(--azul-grisaceo);
+    margin: 1.5rem 0 1rem;
+}
+
+.content__legal--h3 {
+    
+    font-size: 1.3rem;
+    color: var(--azul-grisaceo);
+    margin: 1.5rem 0 0.8rem;
+}
+
+
+.content__legal--p, .content__legal--ul {
+    margin: 0 0 1rem;
+    color: var(--azul-grisaceo);
+}
+
+.content__legal--ul {
+    padding: 0 0 0 20px;
+
+}
+
+.content__legal--ul > li {
+    margin: 0 1rem 0.5rem;
+    color: var(--azul-grisaceo);
 }

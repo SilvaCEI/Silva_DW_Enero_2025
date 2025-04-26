@@ -15,9 +15,23 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav__header">
+            <a href="/proyecto/index.html"><img class="header__logotipo"
+                src="/proyecto/contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo"></a>
+
+            <ul>
+                <li><a class="header__link active" href="sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a class="header__link active" href="carta.html">Carta</a></li>
+                <li><a class="header__link" href="contacto.html">Contactos</a></li>
+                <li><a class="header__link button__reserva" href="reserva.html">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="main__feedback">
         <div class="main__feedback--cliente">
+            
             <div class="main__tittle">
                 <h1>Coméntanos con tu experiencia</h1>
             </div>
@@ -31,7 +45,7 @@
                     <input type="email" id="email" class="text_box" name="email" placeholder="name@example.com"
                         required>
 
-                    <label for="date">Fecha de la visita*</label>
+                    <label for="fecha-visita">Fecha de la visita*</label>
                     <input class="text_box" type="date" id="fecha-visita" name="fecha_visita" required>
 
                     <fieldset class="form-group">
@@ -43,7 +57,7 @@
                         <label><input type="radio" name="valoracion" value="5"> 5</label>
                     </fieldset>
 
-                    <label for="text">Mensaje*</label>
+                    <label for="comentarios">Mensaje*</label>
                     <textarea class="text_area 
                     text_box" id="comentarios" name="comentarios" rows="5" required
                         placeholder="Cuéntanos tu experiencia"></textarea>
@@ -75,8 +89,52 @@
 
         </div>
 
-
     </main>
+    <footer>
+        <div class="footer__info">
+            <div class="footer__contact">
+                <h4 class="footer__title">Contacto</h4>
+                <p class="footer__text">Calle Ramón Carande, 18 — 41005 Sevilla</p>
+                <p class="footer__text">
+                    Teléfono: <a class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
+                    WhatsApp: <a class="footer__social-link" href="https://wa.me/34000000000" target="_blank">+34 000
+                        000 000</a><br>
+                    Email: <a class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
+                </p>
+            </div>
+
+            <div class="footer__hours">
+                <h4 class="footer__title">Horario</h4>
+                <p class="footer__text">Mar–Vie: 13:00–16:00 / 20:00–23:00<br>
+                    Sáb: 13:00–16:30 / 20:00–23:30<br>
+                    Dom: 13:00–16:00<br>
+                    Lun: Cerrado</p>
+            </div>
+
+
+
+            <div class="footer__social">
+                <ul class="footer__social-list">
+                    <li><a href="https://instagram.com/restauranteXYZ" target="_blank"
+                            class="footer__social-link">Instagram</a></li>
+                    <li><a href="https://facebook.com/restauranteXYZ" target="_blank"
+                            class="footer__social-link">Facebook</a></li>
+                    <li><a href="https://tripadvisor.es/yourpage" target="_blank"
+                            class="footer__social-link">Tripadvisor</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="footer__legal">
+            <p class="footer__copy">© 2025 Latitude 37º. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="./politicaprivacidad.html" class="footer__link">Política de privacidad</a></li>
+                <li><a href="./terminosycondiciones.html" class="footer__link">Términos y condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

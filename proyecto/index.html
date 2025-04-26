@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="index.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="./contenido-optimizado/identidad/favicon/favicon-azul.svg">
+    <!-- Favicon -->
+
     <!--fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +23,9 @@
 <body>
     <header class="header__index">
         <nav class="nav__header">
-            <a href="/proyecto/index.html"><img src="" alt="Logotipo"></a>
+            <a href="/proyecto/index.html"><img class="header__logotipo"
+                    src="./contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo"></a>
+
             <ul>
                 <li><a class="header__link" href="./html/sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a class="header__link" href="./html/carta.html">Carta</a></li>
@@ -26,14 +33,16 @@
                 <li><a class="header__link button__reserva" href="./html/reserva.html">Reservar</a></li>
             </ul>
         </nav>
+        <img src="./contenido-optimizado/identidad/favicon/favicon-verde.svg" alt="">
     </header>
 
     <main>
         <div class="main__descriptor">
             <div class="main__descriptor--elements">
 
-                <p class="descriptor--text">«Un espacio donde la gastronomía y la sencillez se encuentran en equilibrio»
-                </p>
+                <h1 class="descriptor--text">«Un espacio donde la gastronomía y la sencillez se encuentran en
+                    equilibrio»
+                </h1>
 
                 <button class="descriptor--button" onclick="location.href='./html/carta.html'">Descubre mucho
                     más</button>
@@ -123,7 +132,7 @@
             </div>
         </section>
 
-        <section class="main__address">
+        <div class="main__address">
             <div class="main__address--maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8477755758013!2d-5.980615124257998!3d37.369778635386325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126e835788ecdd%3A0x3c81df9dc3484b56!2sRam%C3%B3n%20Carande%2C%2018%2C%2041013%20Sevilla!5e0!3m2!1ses!2ses!4v1745487683472!5m2!1ses!2ses"
@@ -140,21 +149,22 @@
                     te garantizamos una respuesta a tus consultas en un máximo de 24 horas durante días laborables.</p>
             </div>
 
-        </section>
+        </div>
         <footer>
             <div class="footer__info">
                 <div class="footer__contact">
-                    <h4 class="footer__title">Contacto</h4>
+                    <h3 class="footer__title">Contacto</h3>
                     <p class="footer__text">Calle Ramón Carande, 18 — 41005 Sevilla</p>
                     <p class="footer__text">
-                        Teléfono: <a  class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
-                        WhatsApp: <a  class="footer__social-link" href="https://wa.me/34000000000" target="_blank">+34 000 000 000</a><br>
-                        Email: <a  class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
+                        Teléfono: <a class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
+                        WhatsApp: <a class="footer__social-link" href="https://wa.me/34000000000" target="_blank">+34
+                            000 000 000</a><br>
+                        Email: <a class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
                     </p>
                 </div>
 
                 <div class="footer__hours">
-                    <h4 class="footer__title">Horario</h4>
+                    <h3 class="footer__title">Horario</h3>
                     <p class="footer__text">Mar–Vie: 13:00–16:00 / 20:00–23:00<br>
                         Sáb: 13:00–16:30 / 20:00–23:30<br>
                         Dom: 13:00–16:00<br>
@@ -178,10 +188,10 @@
 
 
             <div class="footer__legal">
-                <p class="footer__copy">© 2025 Nombre del Restaurante. Todos los derechos reservados.</p>
+                <p class="footer__copy">© 2025 Latitude 37º. Todos los derechos reservados.</p>
                 <ul>
-                    <li><a href="/privacidad" class="footer__link">Política de privacidad</a></li>
-                    <li><a href="/terminos" class="footer__link">Términos y condiciones</a></li>
+                    <li><a href="html/politicaprivacidad.html" class="footer__link">Política de privacidad</a></li>
+                    <li><a href="html/terminosycondiciones.html" class="footer__link">Términos y condiciones</a></li>
                 </ul>
             </div>
         </footer>
