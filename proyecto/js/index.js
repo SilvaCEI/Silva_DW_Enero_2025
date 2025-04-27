@@ -12,13 +12,14 @@
   2. Sobre Nosotros - Toggle Panel
   3. Modal Formulario de Reservas
   4. Carta del Restaurante
+  5. Menú Hamburguesa
 ------------------------------------------------*/
 
 
 //----------- PORTADA --------------
 const buttom = document.getElementById('carta-button');
-if(buttom){
-    document.getElementById('carta-button').addEventListener('click', function() {
+if (buttom) {
+  document.getElementById('carta-button').addEventListener('click', function () {
     window.location.href = './html/carta.html';
   });
 }
@@ -44,20 +45,20 @@ titulos.forEach((titulo, i) => {
 
 const form = document.querySelector('.main__formulario--box form');
 const modal = document.getElementById('modal-reserva');
-if(modal){
+if (modal) {
 
   const closeBtn = modal.querySelector('.close-btn');
-  
+
   form.addEventListener('submit', e => {
-    e.preventDefault();           
-    modal.style.display = 'flex'; 
+    e.preventDefault();
+    modal.style.display = 'flex';
   });
-  
+
   // cerrar con la X
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
-  
+
   // cerrar haciendo clic fuera del contenido
   window.addEventListener('click', e => {
     if (e.target === modal) {
@@ -85,3 +86,25 @@ function menu(e) {
 document.querySelectorAll(".carta__menu-item").forEach(btn =>
   btn.addEventListener("click", menu)
 );
+
+
+//---------------- MENÚ HAMBURGUESA ------------
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav__toggle--burguer');
+  const menu   = document.querySelector('.nav__menu--link');
+
+  if (!toggle || !menu) return;
+
+  // Al hacer clic en la hamburguesa, alterna la visibilidad del menú
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+  // (Opcional) Cierra el menú al pulsar en cualquiera de sus enlaces
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+});

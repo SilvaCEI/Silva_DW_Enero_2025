@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/proyecto/css/styles.css">
-    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg" href="../contenido-optimizado/identidad/favicon/favicon-azul.svg">
@@ -19,12 +19,12 @@
 </head>
 
 <body>
-     <!-- Sección Header -->
-     <header>
+    <!-- Sección Header -->
+    <header>
         <!-- Barra de Navegación -->
         <nav class="nav__header">
-            <a href="/proyecto/index.html"><img class="header__logotipo"
-                src="../contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo" loading=lazy></a>
+            <a href="/index.html"><img class="header__logotipo"
+                    src="../contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo" loading=lazy></a>
             <ul>
                 <li><a class="header__link" href="sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a class="header__link" href="carta.html">Carta</a></li>
@@ -32,6 +32,22 @@
                 <li><a class="header__link button__reserva" href="reserva.html">Reservar</a></li>
             </ul>
         </nav>
+         <!--Menú hamburguesa-->
+         <nav class="nav__burguer">
+            <a href="/index.html"><img class="header__logotipo"
+                    src="/contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo" loading=lazy></a>
+            <button class="nav__toggle--burguer" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <ul class="nav__menu--link">
+                <li><a class="header__link" href="/html/sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a class="header__link" href="/html/carta.html">Carta</a></li>
+                <li><a class="header__link" href="/html/contacto.html">Contactos</a></li>
+                <li><a class="header__link button__reserva" href="/html/reserva.html">Reservar</a></li>
+            </ul>
+        </nav>
+      
     </header>
 
     <!-- Sobre nosotros -->
@@ -57,19 +73,21 @@
             <div class="main__grid--item d"></div>
 
             <div class="main__grid--item e">
-                
+
                 <p>
                     Nuestra cocina nace del respeto por el producto de temporada, de la pasión por los sabores
                     auténticos y de una búsqueda constante por equilibrar tradición y contemporaneidad.
                     Cada plato es una interpretación personal de lo que amamos: la tierra, el mar y el fuego.
                     Nos gusta cocinar despacio, con intención, dejando que cada ingrediente cuente su propia historia.
                 </p>
-                
+
             </div>
 
             <div class="main__grid--item f"></div>
 
-            <div class="main__grid--item grid-logotipo"><img src="../contenido-optimizado/identidad/logotipo/logotipo-verde.svg" alt="logotipo" loading=lazy></div>
+            <div class="main__grid--item grid-logotipo"><img
+                    src="../contenido-optimizado/identidad/logotipo/logotipo-verde.svg" alt="logotipo" loading=lazy>
+            </div>
 
             <div class="main__grid--item g">
                 <p>
@@ -78,10 +96,10 @@
                     y con un trato cercano.
                     Porque detrás de cada servicio, hay un esfuerzo sincero por crear momentos que queden en la memoria.
                 </p>
-                
+
             </div>
 
-            <div class="main__grid--item h"><img src="../contenido-optimizado/identidad/favicon/favicon-azul.svg" alt="isotipo" loading=lazy></div>
+            <div class="main__grid--item h"></div>
 
             <div class="main__grid--item i">
                 <p>
@@ -92,9 +110,14 @@
                 </p>
             </div>
 
-            <div class="main__grid--item j"></div>
+            <img class="grid-favicon" src="../contenido-optimizado/identidad/favicon/favicon-azul.svg"
+            alt="isotipo" loading=lazy>
+
+            <div class="main__grid--item j">
+                
+            </div>
         </div>
-        
+
         <!--Toggle-->
         <section class="main__toggle">
 
@@ -143,9 +166,10 @@
                 <h4 class="footer__title">Contacto</h4>
                 <p class="footer__text">Calle Ramón Carande, 18 — 41005 Sevilla</p>
                 <p class="footer__text">
-                    Teléfono: <a  class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
-                    WhatsApp: <a  class="footer__social-link" href="https://wa.me/34000000000" target="_blank" rel=noreferrer>+34 000 000 000</a><br>
-                    Email: <a  class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
+                    Teléfono: <a class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
+                    WhatsApp: <a class="footer__social-link" href="https://wa.me/34000000000" target="_blank"
+                        rel=noreferrer>+34 000 000 000</a><br>
+                    Email: <a class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
                 </p>
             </div>
 

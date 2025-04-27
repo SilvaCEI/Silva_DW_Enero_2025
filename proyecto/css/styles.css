@@ -27,6 +27,7 @@
   11. Feedback de Clientes
   12. Carta Restaurante
   13. Textos Legales
+  14. Media Queries
 ------------------------------------------------*/
 
 
@@ -123,6 +124,50 @@ li {
     color: var(--azul-grisaceo);
 
 }
+
+/*========= Menú hamburguesa ================*/
+.nav__burguer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .9375rem 1.875rem;
+    
+}
+
+.nav__toggle--burguer {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--azul-grisaceo);
+}
+
+.nav__menu--link {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav__menu--link.active{
+    background-color: var(--verde-salvia);
+    position: absolute;
+    top: 90px;
+    left: 55vw;
+    width: 40vw;
+}
+
+.nav__menu--link.active:hover{
+    background-color: var(--verde-salvia);
+    color: var(--azul-grisaceo);
+}
+
+.button__reserva:hover{
+    color: var(--azul-grisaceo);
+    background-color: var(--blanco-crema);
+
+}
+
 
 /* ====== Enlaces del Header ====== */
 /* Enlace normal */
@@ -292,6 +337,10 @@ li {
     color: black;
 }
 
+.valoracion {
+    margin: .9375rem;
+}
+
 /* Estilo del contenedor del botón de comentarios */
 .form__comentarios--button {
     display: flex;
@@ -345,7 +394,7 @@ li {
 
 /* Estilo para el contenedor del mapa */
 .main__address--maps {
-    padding: 4.375rem 4.375rem;
+    padding: 3.75rem 3.75rem;
     border-radius: 7px;
 
 }
@@ -1043,4 +1092,875 @@ select {
 .content__legal--ul>li {
     margin: 0 1rem 0.5rem;
     color: var(--azul-grisaceo);
+}
+
+
+/* ============================== */
+/* ====== 14.MEDIA QUERIES ====== */
+/* ============================== */
+
+
+/* Móviles  */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+
+    .nav__toggle--burguer {
+        display: block;
+    }
+
+    .nav__menu--link {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 90px;
+        background-color: var(--blanco-crema);
+        width: 100vw;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav__menu--link.active {
+        display: flex;
+    }
+
+    .main__descriptor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /*---------Descriptor principal --------*/
+
+    .descriptor--text {
+        font-size: 2em;
+        text-align: center;
+        width: 70vw;
+    }
+
+    .main__descriptor--photo {
+        display: none;
+    }
+
+    .descriptor--button {
+        margin: 1.25rem 0 0;
+        width: 70vw;
+    }
+
+    /*----- Slider -----*/
+
+    .comentario {
+        width: 80vw;
+    }
+
+
+    /*--- Maps del index ---*/
+
+    .main__address {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .main__address--maps>iframe {
+        width: 21.875rem;
+        height: 21.875rem;
+        padding: 0;
+    }
+
+    .main__address--write {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .address--text {
+        width: 70vw;
+        text-align: center;
+    }
+
+    /*-------- Sobre noosotros -------*/
+
+    .main__grid {
+        width: 100%;
+        padding: 7px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(30, 10vw);
+    }
+
+    /* Estilo de los ítems dentro del grill */
+    .main__grid--item {
+        background-size: cover;
+        background-position: center top;
+        border-radius: 7px;
+        color: var(--azul-grisaceo);
+    }
+
+    /* Estilo para el ítem "a" de la grill */
+    .a {
+        grid-area: 1 / 1 / 3 / 4;
+        align-content: center;
+        font-family: var(--fuente-complementaria);
+        font-size: .8rem;
+        padding: 0 1rem 0 0;
+    }
+
+    /* Estilo para el ítem "b" de la grill */
+    .b {
+        background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
+        background-position: center;
+        grid-area: 3 / 2 / 6 / 4;
+    }
+
+    /* Estilo para el ítem "c" del grill */
+    .c {
+        grid-area: 6 / 1 / 8 / 4;
+        padding: 10px 0;
+    }
+
+    /* Estilo para el ítem "d" del grill */
+    .d {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
+        grid-area: 9 / 1 / 12 / 3;
+    }
+
+    /* Estilo para el ítem "e" del grill */
+    .e {
+        grid-area: 13 / 1 / 15 / 4;
+        padding: 0;
+    }
+
+    /* Estilo para el ítem "f" del grill */
+    .f {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
+        background-position: center;
+        grid-area: 17 / 3 / 22 / 4;
+    }
+
+    /* Estilo para el ítem "g" del grill */
+    .g {
+        grid-area: 18 / 1 / 19 / 3;
+    }
+
+    /* Estilo para el ítem "h" del grill */
+    .h {
+        background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
+        grid-area: 22 / 1 / 28 / 3;
+    }
+
+    /* Estilo para el ítem "i" del grill */
+    .i {
+        grid-area: 26 / 3 / 29 / 4;
+
+    }
+
+    /* Estilo para el ítem "j" del grill */
+    .j {
+        background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
+        background-position: center;
+        grid-area: 29 / 2 / 31 / 5;
+    }
+
+    /* Estilo para el logotipo en la grilla */
+    .grid-logotipo {
+        grid-area: 16 / 1 / 18 / 4;
+
+    }
+
+    .grid-favicon {
+        grid-area: 24 / 1 / 26 / 3;
+    }
+
+    
+    /*------- Carta --------*/
+
+    .main__header>nav {
+        width: 70vw;
+    }
+
+    .carta__menu-list {
+        flex-wrap: wrap;
+
+    }
+
+    .carta__menu-item {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carta__contenido {
+        height: 100%;
+    }
+
+
+    /*-------- Contacto ----------*/
+
+    .main__contacts {
+        height: 100%;
+    }
+
+    .main__content--contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__formulario--box,
+    .main__contacts--buttons {
+        width: 80vw;
+    }
+
+    .main__formulario--box>form {
+        width: 60vw;
+    }
+
+    .main__contacts--buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__contacts--buttons>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__button {
+        width: 60vw;
+    }
+
+    .contact__info {
+        width: 70vw;
+
+    }
+
+    .button__rrss {
+        width: 60vw;
+        margin: .9375rem 0 0;
+    }
+
+    /*-------- Reserva ---------*/
+
+    .main__reserva {
+        height: 100%;
+    }
+
+    /*----------- Form dejar comentario ----------*/
+
+    .main__feedback {
+        height: 100%;
+    }
+}
+
+/* Tablets  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+    .nav__toggle--burguer {
+        display: block;
+    }
+
+    .nav__menu--link {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 90px;
+        background-color: var(--blanco-crema);
+        width: 100vw;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav__menu--link.active {
+        display: flex;
+    }
+
+
+    /*---------Descriptor principal --------*/
+    .main__descriptor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .descriptor--text {
+        font-size: 2em;
+        text-align: center;
+        width: 70vw;
+    }
+
+    .main__descriptor--photo {
+        display: none;
+    }
+
+    .descriptor--button {
+        margin: 1.25rem 0 0;
+        width: 70vw;
+    }
+
+    /*----- Slider -----*/
+
+    .comentario {
+        width: 40vw;
+    }
+
+    .main__address {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__address--maps {
+        padding: 1.875rem 0;
+    }
+
+    .main__address--maps>iframe {
+        width: 700px;
+        height: 21.875rem;
+
+    }
+
+    .main__address--write {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .address--text {
+        width: 70vw;
+        text-align: center;
+    }
+
+    /*-------- Sobrenosotros --------*/
+    .main__grid {
+        width: 100%;
+        padding: 7px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(27, 10vw);
+    }
+
+    /* Estilo de los ítems dentro del grill */
+    .main__grid--item {
+        background-size: cover;
+        background-position: center top;
+        border-radius: 7px;
+        color: var(--azul-grisaceo);
+    }
+
+    /* Estilo para el ítem "a" de la grill */
+    .a {
+        grid-area: 1 / 1 / 3 / 4;
+        align-content: center;
+        font-family: var(--fuente-complementaria);
+        font-size: 1.2rem;
+        padding: 0 1rem 0 0;
+    }
+
+    /* Estilo para el ítem "b" de la grill */
+    .b {
+        background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
+        background-position: center;
+        grid-area: 3 / 2 / 6 / 4;
+    }
+
+    /* Estilo para el ítem "c" del grill */
+    .c {
+        grid-area: 6 / 1 / 7 / 4;
+        padding: 10px 0;
+    }
+
+    /* Estilo para el ítem "d" del grill */
+    .d {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
+        grid-area: 8 / 1 / 12 / 3;
+    }
+
+    /* Estilo para el ítem "e" del grill */
+    .e {
+        grid-area: 11 / 3 / 12 / 4;
+
+    }
+
+    /* Estilo para el ítem "f" del grill */
+    .f {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
+        background-position: center;
+        grid-area: 13 / 3 / 20 / 4;
+    }
+
+    /* Estilo para el ítem "g" del grill */
+    .g {
+        grid-area: 16 / 1 / 19 / 2;
+    }
+
+    /* Estilo para el ítem "h" del grill */
+    .h {
+        background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
+        grid-area: 21 / 1 / 25 / 3;
+    }
+
+    /* Estilo para el ítem "i" del grill */
+    .i {
+        grid-area: 24 / 3 / 25 / 4;
+
+    }
+
+    /* Estilo para el ítem "j" del grill */
+    .j {
+        background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
+        background-position: center;
+        grid-area: 26 / 2 / 28 / 5;
+    }
+
+    /* Estilo para el logotipo en la grilla */
+    .grid-logotipo {
+        grid-area: 13 / 1 / 14 / 4;
+
+    }
+
+    .grid-favicon {
+        grid-area: 22 / 1 / 24 / 3;
+    }
+
+    /*-------- Carta --------*/
+
+
+    .carta__menu-list {
+        flex-wrap: wrap;
+
+    }
+
+    .carta__menu-item {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carta__contenido {
+        height: 100%;
+    }
+
+
+    /*-------- Contacto ----------*/
+
+    .main__contacts {
+        height: 100%;
+    }
+
+    .main__content--contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__formulario--box,
+    .main__contacts--buttons {
+        width: 80vw;
+    }
+
+    .main__formulario--box>form {
+        width: 60vw;
+    }
+
+    .main__contacts--buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__contacts--buttons>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__button {
+        width: 60vw;
+    }
+
+    .contact__info {
+        width: 70vw;
+
+    }
+
+    .button__rrss {
+        width: 60vw;
+        margin: .9375rem 0 0;
+    }
+
+
+    /*-------- Reserva ---------*/
+
+    .main__reserva {
+        height: 100%;
+    }
+
+    /*----------- Form dejar comentario ----------*/
+
+    .main__feedback {
+        height: 100%;
+    }
+
+
+}
+
+/* Pantalla pc normal  */
+@media (min-width: 1025px) and (max-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+
+    .nav__burguer {
+        display: none;
+    }
+
+    .nav__header {
+        width: 70vw;
+    }
+
+
+    /*---------Descriptor principal --------*/
+
+    .descriptor--text {
+        font-size: 3em;
+    }
+
+    /*----- Slider -----*/
+
+    .comentario {
+        width: 30vw;
+    }
+
+    .main__address {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__address--maps {
+        padding: 1.875rem 0;
+    }
+
+    .main__address--maps>iframe {
+        width: 700px;
+        height: 21.875rem;
+
+    }
+
+    .main__address--write {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .address--text {
+        width: 70vw;
+        text-align: center;
+    }
+
+    /*-------- Sobrenosotros --------*/
+    .main__grid {
+        width: 100%;
+        padding: 7px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(27, 10vw);
+    }
+
+    /* Estilo de los ítems dentro del grill */
+    .main__grid--item {
+        background-size: cover;
+        background-position: center top;
+        border-radius: 7px;
+        color: var(--azul-grisaceo);
+    }
+
+    /* Estilo para el ítem "a" de la grill */
+    .a {
+        grid-area: 1 / 1 / 3 / 4;
+        align-content: center;
+        font-family: var(--fuente-complementaria);
+        font-size: 1.2rem;
+        padding: 0 1rem 0 0;
+    }
+
+    /* Estilo para el ítem "b" de la grill */
+    .b {
+        background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
+        background-position: center;
+        grid-area: 3 / 2 / 6 / 4;
+    }
+
+    /* Estilo para el ítem "c" del grill */
+    .c {
+        grid-area: 6 / 1 / 7 / 3;
+        padding: 10px 0;
+    }
+
+    /* Estilo para el ítem "d" del grill */
+    .d {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
+        grid-area: 8 / 1 / 12 / 3;
+    }
+
+    /* Estilo para el ítem "e" del grill */
+    .e {
+        grid-area: 11 / 3 / 12 / 4;
+
+    }
+
+    /* Estilo para el ítem "f" del grill */
+    .f {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
+        background-position: center;
+        grid-area: 13 / 3 / 20 / 4;
+    }
+
+    /* Estilo para el ítem "g" del grill */
+    .g {
+        grid-area: 16 / 1 / 19 / 2;
+    }
+
+    /* Estilo para el ítem "h" del grill */
+    .h {
+        background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
+        grid-area: 21 / 1 / 25 / 3;
+    }
+
+    /* Estilo para el ítem "i" del grill */
+    .i {
+        grid-area: 24 / 3 / 25 / 4;
+
+    }
+
+    /* Estilo para el ítem "j" del grill */
+    .j {
+        background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
+        background-position: center;
+        grid-area: 26 / 2 / 28 / 5;
+    }
+
+    /* Estilo para el logotipo en la grilla */
+    .grid-logotipo {
+        grid-area: 13 / 1 / 14 / 4;
+
+    }
+
+    .grid-favicon {
+        grid-area: 22 / 1 / 24 / 3;
+    }
+
+    /*-------- Carta --------*/
+
+
+    .carta__menu-list>li {
+        width: 20vw;
+        margin: .625rem;
+
+    }
+
+    .carta__menu-item {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carta__contenido {
+        height: 100%;
+    }
+
+
+    /*-------- Contacto ----------*/
+
+    .main__contacts {
+        height: 100%;
+        background-position: center;
+    }
+
+
+    /*-------- Reserva ---------*/
+
+    .main__reserva {
+        height: 100%;
+    }
+
+    /*----------- Form dejar comentario ----------*/
+
+    .main__feedback {
+        height: 100%;
+    }
+
+
+}
+
+/* Pantallas grandes 4K */
+@media (min-width: 1921px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    .nav__header {
+        height: 5vw;
+    }
+
+    .header__link {
+        font-size: 1.3em;
+    }
+
+    .header__logotipo {
+        height: 4vh;
+    }
+
+    .nav__burguer {
+        display: none;
+    }
+
+    /*---------Descriptor principal --------*/
+
+    .descriptor--text {
+        font-size: 5em;
+    }
+
+    .descriptor--button {
+        font-size: 1.8rem;
+    }
+
+
+    /*-------- Sobrenosotros --------*/
+    .main__grid {
+        width: 100%;
+        padding: 7px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(24, 10vw);
+    }
+
+    /* Estilo de los ítems dentro del grill */
+    .main__grid--item {
+        background-size: cover;
+        background-position: center top;
+        border-radius: 7px;
+        color: var(--azul-grisaceo);
+        font-size: 1.3em;
+    }
+
+    /* Estilo para el ítem "a" de la grill */
+    .a {
+        grid-area: 1 / 1 / 3 / 2;
+        align-content: center;
+        font-family: var(--fuente-complementaria);
+        font-size:3.1rem;
+        padding: 0 1rem 0 0;
+    }
+
+    /* Estilo para el ítem "b" de la grill */
+    .b {
+        background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
+        background-position: center;
+        grid-area: 3 / 2 / 6 / 4;
+    }
+
+    /* Estilo para el ítem "c" del grill */
+    .c {
+        grid-area: 6 / 2 / 7 / 4;
+        padding: 10px 0;
+
+    }
+
+    /* Estilo para el ítem "d" del grill */
+    .d {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
+        grid-area: 8 / 1 / 12 / 3;
+    }
+
+    /* Estilo para el ítem "e" del grill */
+    .e {
+        grid-area: 10 / 3 / 11 / 4;
+
+    }
+
+    /* Estilo para el ítem "f" del grill */
+    .f {
+        background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
+        background-position: center;
+        grid-area: 13 / 3 / 16 / 4;
+    }
+
+    /* Estilo para el ítem "g" del grill */
+    .g {
+        grid-area: 16 / 1 / 19 / 2;
+    }
+
+    /* Estilo para el ítem "h" del grill */
+    .h {
+        background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
+        grid-area: 18 / 1 / 22 / 3;
+    }
+
+    /* Estilo para el ítem "i" del grill */
+    .i {
+        grid-area: 21 / 3 / 22 / 4;
+
+    }
+
+    /* Estilo para el ítem "j" del grill */
+    .j {
+        background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
+        background-position: center;
+        grid-area: 23 / 2 / 25 / 5;
+    }
+
+    /* Estilo para el logotipo en la grilla */
+    .grid-logotipo {
+        grid-area: 13 / 1 / 14 / 4;
+
+    }
+
+    .grid-favicon {
+        grid-area: 19 / 1 / 23 / 3;
+    }
+
+
 }
