@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/index.js" defer></script>
+    <script src="index.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg" href="./contenido-optimizado/identidad/favicon/favicon-azul.svg">
+    <!-- Favicon -->
 
     <!--fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +21,10 @@
 </head>
 
 <body>
-    <!-- Sección Header -->
     <header class="header__index">
-        <!-- Barra de Navegación -->
         <nav class="nav__header">
-            <a href="index.html"><img class="header__logotipo"
-                    src="./contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo" loading=lazy></a>
+            <a href="/proyecto/index.html"><img class="header__logotipo"
+                    src="./contenido-optimizado/identidad/logotipo/logotipo-azul.svg" alt="Logotipo"></a>
 
             <ul>
                 <li><a class="header__link" href="./html/sobrenosotros.html">Sobre nosotros</a></li>
@@ -34,12 +33,10 @@
                 <li><a class="header__link button__reserva" href="./html/reserva.html">Reservar</a></li>
             </ul>
         </nav>
-        <img src="/proyecto/contenido-optimizado/identidad/favicon/favicon-verde.svg" alt="logotipo" loading=lazy>
+        <img src="./contenido-optimizado/identidad/favicon/favicon-verde.svg" alt="">
     </header>
 
-    <!-- Sección de contenido principal -->
     <main>
-        <!-- Descriptor principal -->
         <div class="main__descriptor">
             <div class="main__descriptor--elements">
 
@@ -47,8 +44,8 @@
                     equilibrio»
                 </h1>
 
-                <button class="descriptor--button" id="carta-button">Descubre mucho más</button>
-
+                <button class="descriptor--button" onclick="location.href='./html/carta.html'">Descubre mucho
+                    más</button>
 
             </div>
             <div class="main__descriptor--photo">
@@ -61,13 +58,11 @@
             </div>
         </div>
 
-        <!-- Slider -->
         <section class="main__slider">
             <h2>Nuestros clientes</h2>
 
             <div class="main__slider--box">
 
-                <!-- Comentarios -->
                 <div class="comentarios">
                     <div class="comentario">
                         <p class="texto">"La comida estaba espectacular y el ambiente inmejorable. ¡Volveremos pronto!"
@@ -137,8 +132,7 @@
             </div>
         </section>
 
-        <!-- Mapa -->
-        <section class="main__address">
+        <div class="main__address">
             <div class="main__address--maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.8477755758013!2d-5.980615124257998!3d37.369778635386325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126e835788ecdd%3A0x3c81df9dc3484b56!2sRam%C3%B3n%20Carande%2C%2018%2C%2041013%20Sevilla!5e0!3m2!1ses!2ses!4v1745487683472!5m2!1ses!2ses"
@@ -155,24 +149,20 @@
                     te garantizamos una respuesta a tus consultas en un máximo de 24 horas durante días laborables.</p>
             </div>
 
-        </section>
-
-        <!-- Footer -->
+        </div>
         <footer>
             <div class="footer__info">
-                <!-- Contacto -->
                 <div class="footer__contact">
                     <h3 class="footer__title">Contacto</h3>
                     <p class="footer__text">Calle Ramón Carande, 18 — 41005 Sevilla</p>
                     <p class="footer__text">
                         Teléfono: <a class="footer__social-link" href="tel:+34954123456">+34 000 000 000</a><br>
-                        WhatsApp: <a class="footer__social-link" href="https://wa.me/34000000000" target="_blank" rel=noreferrer>+34
+                        WhatsApp: <a class="footer__social-link" href="https://wa.me/34000000000" target="_blank">+34
                             000 000 000</a><br>
                         Email: <a class="footer__social-link" href="mailto:info@latitude37.es">info@latitude37.es</a>
                     </p>
                 </div>
 
-                <!-- Horario de apertura -->
                 <div class="footer__hours">
                     <h3 class="footer__title">Horario</h3>
                     <p class="footer__text">Mar–Vie: 13:00–16:00 / 20:00–23:00<br>
@@ -181,20 +171,22 @@
                         Lun: Cerrado</p>
                 </div>
 
-                <!-- Redes Sociales -->
+
+
                 <div class="footer__social">
                     <ul class="footer__social-list">
-                        <li><a href="https://instagram.com/latitude37" target="_blank" rel="noreferrer"
+                        <li><a href="https://instagram.com/restauranteXYZ" target="_blank"
                                 class="footer__social-link">Instagram</a></li>
-                        <li><a href="https://facebook.com/latitude37" target="_blank" rel="noreferrer"
+                        <li><a href="https://facebook.com/restauranteXYZ" target="_blank"
                                 class="footer__social-link">Facebook</a></li>
-                        <li><a href="https://tripadvisor.es/latitude37" target="_blank" rel="noreferrer"
+                        <li><a href="https://tripadvisor.es/yourpage" target="_blank"
                                 class="footer__social-link">Tripadvisor</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Legal -->
+
+
             <div class="footer__legal">
                 <p class="footer__copy">© 2025 Latitude 37º. Todos los derechos reservados.</p>
                 <ul>
@@ -203,6 +195,7 @@
                 </ul>
             </div>
         </footer>
+
     </main>
 </body>
 

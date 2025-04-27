@@ -1,40 +1,3 @@
-/*------------------------------------------------
-  Archivo: styles.css
-  Descripción: 
-  Este archivo contiene los estilos principales para el sitio web del restaurante.
-  Se incluyen variables globales, reset de estilos, y los estilos específicos para:
-  - Header y navegación
-  - Páginas principales (inicio, contacto, sobre nosotros, carta)
-  - Formularios (reservas, comentarios)
-  - Componentes (slider, toggle, modales)
-  - Footer
-------------------------------------------------*/
-
-/*------------------------------------------------
-  Tabla de Contenidos:
-  1. Variables globales
-  2. Reset general
-  3. Header
-  4. Index
-  5. Slider de clientes
-  6. Mapa
-  7. Footer
-  8. Sobre nosotros
-    8.1. Grid.
-    8.2. Toggle Panel
-  9.  Formulario de Reserva
-  10. Contacto
-  11. Feedback de Clientes
-  12. Carta Restaurante
-  13. Textos Legales
-------------------------------------------------*/
-
-
-/* ============================== */
-/* ====== 1.VARIABLES GLOBALES ====== */
-/* ============================== */
-
-/* Normalización de márgenes, padding, borde y otras propiedades */
 * {
     margin: 0;
     padding: 0;
@@ -46,11 +9,6 @@
 
 }
 
-/* ============================== */
-/* ====== 2.RESET Y ESTILOS BASE ====== */
-/* ============================== */
-
-/* Variables para colores y tipografías principales */
 :root {
     --verde-salvia: #BADBC3;
     --blanco-crema: #F5F5F0;
@@ -60,21 +18,16 @@
     --verde-salvia-transparencia: rgba(186, 219, 195, 0.8);
 }
 
-/* Fondo general del sitio */
 body {
     background-color: var(--blanco-crema);
 }
 
-/* ============================== */
-/* ====== 3.HEADER ====== */
-/* ============================== */
+/*------- HEADER ---------*/
 
-/* Estilos generales del encabezado */
 header {
     padding: 15px;
 }
 
-/* Contenedor principal de la navegación */
 .nav__header {
     display: flex;
     flex-direction: row;
@@ -90,12 +43,10 @@ header {
     color: var(--blanco-crema);
 }
 
-/* Logotipo del Header */
-.header__logotipo {
-    height: 30px;
+.header__logotipo{
+    height: 33px;
 }
 
-/* Estilos para la lista no ordenada */
 ul {
     display: flex;
     flex-direction: row;
@@ -104,55 +55,42 @@ ul {
     color: #fafafa;
 }
 
-/* Elementos de la lista */
 li {
     margin: 0 20px 0;
 }
 
-/* ====== Botón de Reserva en la Navegación ====== */
-/* Estilo normal del botón */
-.button__reserva {
+.button__reserva{
     background-color: var(--azul-grisaceo);
-    padding: 5px 7px;
-    border-radius: 7px;
+   padding: 5px 7px;
+   border-radius: 7px;
 }
 
-/* Hover en el botón de reserva */
-.button__reserva:hover {
+.button__reserva:hover{
     background-color: var(--verde-salvia);
     color: var(--azul-grisaceo);
-
+   
 }
 
-/* ====== Enlaces del Header ====== */
-/* Enlace normal */
 .header__link {
     text-decoration: none;
     color: var(--blanco-crema);
 }
 
-/* Enlace activo */
-.header__link.active {
+.header__link.active{
     color: var(--azul-grisaceo);
 }
 
-/* Enlace activo que también es botón */
-.header__link.button__reserva.active {
+.header__link.button__reserva.active{
     background-color: var(--verde-salvia);
     color: var(--azul-grisaceo);
 }
 
-/* Hover en el botón de reserva */
-.header__link:hover {
+.header__link:hover{
     color: var(--azul-grisaceo);
 }
 
-/* ============================== */
-/* ====== 4.INDEX ====== */
-/* ============================== */
+/*----------------- COMIENZA EL INDEX -------------------*/
 
-/* ====== Sección de Portada del Index ====== */
-/* Imagen de fondo para la portada */
 .header__index {
     background-image: url("../contenido-optimizado/imagenes/comida/background-index.jpg");
     background-size: cover;
@@ -160,14 +98,12 @@ li {
     height: 100vh;
 }
 
-/* Título principal en el Index */
 .main__tittle {
     text-align: center;
     margin: 20px;
     color: var(--blanco-crema);
 }
 
-/* Contenedor principal del descriptor */
 .main__descriptor {
     display: flex;
     flex-direction: row;
@@ -177,7 +113,6 @@ li {
 
 }
 
-/* Contenedor principal del descriptor */
 .main__descriptor--elements {
     width: 30vw;
     display: flex;
@@ -187,15 +122,12 @@ li {
 
 }
 
-/* ====== Descriptor ====== */
-/* Texto del descriptor */
 .descriptor--text {
     font-size: 4rem;
     font-family: var(--fuente-complementaria);
     color: var(--azul-grisaceo);
 }
 
-/* Botón del descriptor */
 .descriptor--button {
     width: 20vw;
     height: 7vh;
@@ -206,24 +138,21 @@ li {
     color: var(--blanco-crema);
 }
 
-/* Hover del botón del descriptor */
 .descriptor--button:hover {
     background-color: var(--verde-salvia);
     color: var(--azul-grisaceo);
 
 }
 
-/* Imagen del descriptor */
+
 .descriptor--photo {
     width: 40vw;
     border-radius: 7px;
 }
 
-/* ============================== */
-/* ====== 5.SLIDER DE COMENTARIOS CLIENTES ====== */
-/* ============================== */
 
-/* Contenedor principal del slider */
+
+/*--------SECCIÓN DE COMENTARIOS DE CLIENTES----------*/
 .main__slider {
     display: flex;
     flex-direction: column;
@@ -242,11 +171,10 @@ li {
 }
 
 .main__slider>h2 {
-    margin: 1.875rem;
+    margin: 30px;
     color: var(--azul-grisaceo);
 }
 
-/* Contenedor de los comentarios dentro del slider */
 .main__slider--box {
     display: flex;
     align-items: center;
@@ -254,17 +182,16 @@ li {
 
 }
 
-/* Contenedor de la lista de comentarios */
+
 .comentarios {
     display: flex;
     gap: 1rem;
-    padding: .625rem;
+    padding: 10px;
     border-radius: 7px;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
-/* Estilo de cada comentario individual */
 .comentario {
     flex: 0 0 auto;
     width: 20vw;
@@ -276,7 +203,6 @@ li {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el texto dentro del comentario */
 .texto {
     font-style: italic;
     text-align: center;
@@ -285,14 +211,12 @@ li {
     margin: 0 auto;
 }
 
-/* Estilo del autor del comentario */
 .autor {
     margin: 2em 0;
     font-weight: bold;
     color: black;
 }
 
-/* Estilo del contenedor del botón de comentarios */
 .form__comentarios--button {
     display: flex;
     flex-direction: column;
@@ -300,7 +224,8 @@ li {
     align-content: center;
 }
 
-/* Estilo del enlace de comentarios */
+
+
 .form__comentarios--link {
     display: flex;
     flex-direction: column;
@@ -310,23 +235,17 @@ li {
     font-size: 1rem;
     border-radius: 7px;
     background-color: var(--verde-salvia);
-    margin: 1.875rem;
+    margin: 30px;
     height: 7vh;
     cursor: pointer;
 }
 
-/* Efecto hover sobre el enlace */
 .form__comentarios--link:hover {
     color: var(--blanco-crema);
     background-color: var(--azul-grisaceo);
 
 }
 
-/* ============================== */
-/* ====== 6.MAPA ====== */
-/* ============================== */
-
-/* Contenedor principal de la dirección (incluye el mapa y la información) */
 .main__address {
     background-color: var(--blanco-crema);
     display: flex;
@@ -334,7 +253,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 3.125rem 0 0;
+    margin: 50px 0 0;
     border-radius: 7px;
     box-shadow:
         0 8px 16px rgba(0, 0, 0, 0.2),
@@ -343,56 +262,47 @@ li {
 
 }
 
-/* Estilo para el contenedor del mapa */
 .main__address--maps {
-    padding: 4.375rem 4.375rem;
+    padding: 70px 70px;
     border-radius: 7px;
 
 }
 
-/* Estilo para la sección de texto descriptivo (información sobre la dirección) */
 .main__address--write {
     align-items: center;
-    padding: 2.5rem 3.125rem;
+    padding: 40px 50px;
     color: var(--azul-grisaceo);
 }
 
-/* Estilo del texto para la dirección (es más grande que otros textos) */
 .address--write {
     font-size: 2rem;
 
 }
 
-/* Estilo para el texto de la ciudad (ligeramente más pequeño que la dirección) */
 .address--city {
     font-size: 1.7rem;
 
 }
 
-/* Estilo para los detalles adicionales de la dirección */
 .address--info {
-    margin: .625rem 0;
+    margin: 10px 0;
     font-size: 1rem;
     text-align: left;
 }
 
-/* Estilo para el contenedor del texto dentro de la dirección */
 .address--text {
     width: 25vw;
 }
 
-/* ============================== */
-/* ====== 7.FOOTER ====== */
-/* ============================== */
 
-/* Estilo principal del footer */
+/*--------------- FOOTER ----------------*/
 footer {
     background-color: var(--azul-grisaceo);
     color: var(--blanco-crema);
     padding: 1rem 2rem;
 }
 
-/* Contenedor del contenido dentro del footer */
+/* Contenido footer */
 .footer__info {
     display: flex;
     flex-wrap: wrap;
@@ -401,7 +311,7 @@ footer {
     margin: 2rem;
 }
 
-/* Estilo de los títulos dentro del footer */
+/* Titulos del footer*/
 .footer__title {
     font-size: 1.25rem;
     margin: 0.75rem;
@@ -419,12 +329,11 @@ footer {
 .footer__list,
 .footer__social-list {
     list-style: none;
-}
+    }
 
-/* Estilo de las listas dentro del footer */
 .footer__list li,
 .footer__social-list li {
-    margin: 0 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Links del footer */
@@ -432,7 +341,6 @@ footer {
     font-size: 0.7rem;
 }
 
-/* Estilo general para los enlaces y los enlaces sociales */
 .footer__link,
 .footer__social-link {
     color: var(--blanco-crema);
@@ -440,13 +348,13 @@ footer {
     transition: color 0.3s;
 }
 
-/* Efecto hover en los enlaces */
 .footer__link:hover,
 .footer__social-link:hover {
     color: var(--verde-salvia);
 }
 
-/* Estilo para la sección de textos legales en el footer */
+
+/* Textos lgales */
 .footer__legal {
     border-top: 0.1px solid var(--blanco-crema);
     padding: 1rem;
@@ -460,21 +368,14 @@ footer {
 
 }
 
-/* Estilo del texto de copyright */
 .footer__copy {
     margin: 1rem 0;
 }
 
-/* ============================== */
-/* ====== 8. SOBRE NOSOTROS====== */
-/* ============================== */
 
 
-/* ============================== */
-/* ====== 8.1 SOBRE NOSOTROS -> GRID ====== */
-/* ============================== */
+/*---------------- SOBRE NOSOTROS ---------------------*/
 
-/* Contenedor principal del grill */
 .main__grid {
     width: 100%;
     padding: 7px;
@@ -483,7 +384,6 @@ footer {
     grid-template-rows: repeat(20, 10vw);
 }
 
-/* Estilo de los ítems dentro del grill */
 .main__grid--item {
     background-size: cover;
     background-position: center top;
@@ -491,7 +391,6 @@ footer {
     color: var(--azul-grisaceo);
 }
 
-/* Estilo para el ítem "a" de la grill */
 .a {
     grid-area: 1 / 1 / 4 / 2;
     align-content: center;
@@ -500,26 +399,22 @@ footer {
     padding: 0 1rem 0 0;
 }
 
-/* Estilo para el ítem "b" de la grill */
 .b {
     background-image: url(../contenido-optimizado/imagenes/equipo/all-team.jpg);
     background-position: center;
     grid-area: 2 / 2 / 5 / 5;
 }
 
-/* Estilo para el ítem "c" deel grill */
 .c {
     grid-area: 5 / 2 / 6 / 4;
     padding: 10px 0;
 }
 
-/* Estilo para el ítem "d" del grill */
 .d {
     background-image: url(../contenido-optimizado/imagenes/equipo/chefs-working.jpg);
     grid-area: 6 / 2 / 9 / 3;
 }
 
-/* Estilo para el ítem "e" del grill */
 .e {
     grid-area: 8 / 3 / 9 / 5;
     padding: 0 10px;
@@ -528,25 +423,21 @@ footer {
     justify-content: end;
 }
 
-/* Estilo para el ítem "f" del grill */
 .f {
     background-image: url(../contenido-optimizado/imagenes/equipo/chef.jpg);
     background-position: center;
     grid-area: 10 / 3 / 14 / 5;
 }
 
-/* Estilo para el ítem "g" del grill */
 .g {
     grid-area: 10 / 1 / 11 / 2;
 }
 
-/* Estilo para el ítem "h" del grill */
 .h {
     background-image: url(../contenido-optimizado/imagenes/equipo/kitchen.jpg);
     grid-area: 15 / 1 / 18 / 4;
 }
 
-/* Estilo para el ítem "i" del grill */
 .i {
     grid-area: 17 / 4 / 18 / 5;
     display: flex;
@@ -556,24 +447,18 @@ footer {
 
 }
 
-/* Estilo para el ítem "j" del grill */
 .j {
     background-image: url(../contenido-optimizado/imagenes/comida/platos-camarero.jpg);
     background-position: center;
     grid-area: 19 / 2 / 21 / 5;
 }
 
-/* Estilo para el logotipo en la grilla */
-.grid-logotipo {
+.grid-logotipo{
     grid-area: 12 / 1 / 13 / 4;
 
 }
 
-/* ============================== */
-/* ====== 8.2 SOBRE NOSOTROS -> TOGGLE PANEL ====== */
-/* ============================== */
-
-/* Contenedor principal del panel toggle */
+/*------ TOGGLE PANEL -----*/
 .main__toggle {
     display: flex;
     flex-direction: column;
@@ -583,7 +468,6 @@ footer {
     color: var(--azul-grisaceo);
 }
 
-/* Contenedor del toggle (panel en sí) */
 .toggle {
     width: 90%;
     max-width: 120em;
@@ -593,7 +477,6 @@ footer {
     background-color: var(--verde-salvia);
 }
 
-/* Estilo para cada bloque dentro del panel toggle */
 .toggle .bloque {
     margin: 0 0 1em;
     padding: 1em;
@@ -603,7 +486,6 @@ footer {
     align-items: center;
 }
 
-/* Estilo para los títulos de los bloques */
 .toggle .h2 {
 
     padding: 1em;
@@ -613,7 +495,6 @@ footer {
 
 }
 
-/* Estilo para el contenido oculto dentro de cada bloque */
 .toggle .contenido {
     height: 0;
     padding: 0;
@@ -622,18 +503,16 @@ footer {
 
 }
 
-/* Estilo cuando el bloque está activo (expandido) */
+
 .toggle .bloque.activo .contenido {
     border-top: 1px solid var(--blanco-crema);
     height: 6em;
     padding: 1em;
 }
 
-/* ============================== */
-/* ====== 9.FORMULARIO DE RESERVA ====== */
-/* ============================== */
 
-/* Contenedor principal del formulario de reserva */
+/*---------- FORMULARIO RESERVA -------------*/
+
 .main__reserva {
     display: flex;
     flex-direction: column;
@@ -650,7 +529,7 @@ footer {
 
 /*-------CARACTERÍSTICAS GENERALES DEL FORMULARIO--------*/
 
-/* Estilo del contenedor que envuelve el formulario */
+
 .main__formulario--box {
     background-color: var(--blanco-crema);
     border-radius: 7px;
@@ -659,7 +538,6 @@ footer {
 
 }
 
-/* Estilo general para el formulario */
 form {
     width: 30vw;
     display: flex;
@@ -667,26 +545,22 @@ form {
     margin: 50px;
 }
 
-/* Estilo para los elementos de entrada (input) y selección (select) */
 input,
 select {
     margin: 5px 0 15px 0;
     color: var(--azul-grisaceo);
 }
 
-/* Estilo para las cajas de texto dentro del formulario */
 .text_box {
     padding: 6px;
     border-radius: 4px;
 }
 
-/* Estilo para el área de texto */
 .text_area {
     height: 100px;
     border-radius: 4px;
 }
 
-/* Estilo para el botón de envío del formulario */
 .button__form {
     background-color: var(--azul-grisaceo);
     color: var(--blanco-crema);
@@ -696,13 +570,11 @@ select {
 
 }
 
-/* Estilo del botón cuando se pasa el mouse sobre él */
 .button__form:hover {
     background-color: var(--verde-salvia);
     color: var(--azul-grisaceo);
 }
 
-/* Estilo para el modal (ventana emergente) */
 .modal {
     display: none;
     /* oculto por defecto */
@@ -726,7 +598,6 @@ select {
     border-radius: 7px;
 }
 
-/* Estilo para el botón de cerrar del modal */
 .close-btn {
     position: absolute;
     top: 0.5em;
@@ -736,30 +607,25 @@ select {
     color: var(--blanco-crema);
 }
 
-/* Estilo para el mensaje de éxito dentro del modal */
 .mensaje-exito {
     font-size: 1.1rem;
     color: var(--verde-salvia);
-    margin: 0 0 0.5rem 0;
+    margin-bottom: 0.5em;
 }
 
-/* Estilo para los mensajes informativos dentro del modal */
 .mensaje-info {
     font-size: 0.85rem;
     color: var(--blanco-crema);
 }
 
-/* Alineación del texto en los mensajes de éxito e informativos */
 .mensaje-exito,
 .mensaje-info {
     text-align: center;
 }
 
-/* ============================== */
-/* ======10.CONTACTO ====== */
-/* ============================== */
 
-/* Contenedor principal de la sección de contacto */
+/*-------- PÁGINA DE CONTACTOS -------*/
+
 .main__contacts {
     display: flex;
     flex-direction: column;
@@ -770,7 +636,6 @@ select {
     border-radius: .625rem .625rem 0 0;
 }
 
-/* Contenedor interno para organizar el contenido de contacto */
 .main__content--contacts {
     display: flex;
     flex-direction: row;
@@ -780,7 +645,6 @@ select {
 
 }
 
-/* Estilo para los botones de contacto */
 .main__contacts--buttons {
     display: flex;
     flex-direction: column;
@@ -792,7 +656,6 @@ select {
 
 }
 
-/* Estilo para los botones principales de contacto */
 .contact__button,
 .button__rrss {
     display: flex;
@@ -806,19 +669,17 @@ select {
 
 }
 
-/* Estilo específico para el botón de contacto */
+
 .contact__button {
     width: 30vw;
     margin: 10px 0;
 }
 
-/* Estilo cuando se pasa el mouse sobre el botón de contacto */
 .contact__button:hover {
     color: var(--blanco-crema);
     background-color: var(--azul-grisaceo)
 }
 
-/* Estilo para los botones de redes sociales */
 .contact__buttons--rrss {
     display: flex;
     flex-direction: row;
@@ -826,7 +687,6 @@ select {
     margin: 10px 0;
 }
 
-/* Estilo para los botones de redes sociales */
 .button__rrss {
     background-color: var(--verde-salvia);
     width: 14.2vw;
@@ -834,13 +694,11 @@ select {
 
 }
 
-/* Estilo cuando se pasa el mouse sobre los botones de redes sociales */
 .button__rrss:hover {
     color: var(--blanco-crema);
     background-color: var(--azul-grisaceo)
 }
 
-/* Estilo para la sección de información de contacto */
 .contact__info {
     display: flex;
     flex-direction: column;
@@ -851,11 +709,10 @@ select {
     color: var(--azul-grisaceo);
 }
 
-/* ============================== */
-/* ====== 11.FEEDBACK DE CLIENTES ====== */
-/* ============================== */
 
-/* Estilo para el contenedor principal de la sección de Feedback */
+
+
+/*----------FORMULARIO PARA COMENTARIOS DE CLIENTES-----------*/
 .main__feedback {
     background-image: url("../contenido-optimizado/imagenes/comida/background-feedback.jpg");
     background-size: cover;
@@ -865,7 +722,6 @@ select {
     border-radius: .625rem .625rem 0 0;
 }
 
-/* Estilo para la organización interna de los elementos de Feedback */
 .main__feedback--cliente {
     display: flex;
     flex-direction: column;
@@ -874,11 +730,10 @@ select {
 
 }
 
-/* ============================== */
-/* ====== 12.CARTA DEL RESTAURANTE ====== */
-/* ============================== */
 
-/* Contenedor para la lista del menú del restaurante */
+
+/*------------ CARTA RESTAURANTE ------------*/
+
 .carta__menu-list {
     display: flex;
     list-style: none;
@@ -887,7 +742,6 @@ select {
     margin: 0;
 }
 
-/* Estilo para los elementos de menú en la carta */
 .carta__menu-item {
     cursor: pointer;
     border: .5px solid var(--azul-grisaceo);
@@ -899,7 +753,6 @@ select {
 
 }
 
-/* Estilo cuando se pasa el mouse sobre un elemento del menú */
 .carta__menu-item:hover {
     color: var(--azul-grisaceo);
     background-color: var(--verde-salvia);
@@ -911,24 +764,23 @@ select {
     background-color: var(--azul-grisaceo);
 }
 
-/* Estilo cuando se pasa el mouse sobre un elemento activo del menú */
 .carta__menu-item.active:hover {
     color: var(--verde-salvia);
 }
 
-/* Contenedor de contenido de la carta */
+/* Contenedor de contenido */
 .carta__contenido {
     padding: 2vw;
     text-align: justify;
 }
 
-/* Cada sección dentro de la carta */
+/* Cada sección (div) */
 .carta__seccion {
     display: none;
 }
 
-/* Estilo para el contenido de la carta con fondo */
-.carta__contenido {
+
+.carta__contenido{
     background-image: url("../contenido-optimizado/imagenes/comida/background-carta.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -937,110 +789,98 @@ select {
     border-radius: 10px;
 
 }
-
-/* Estado activo de la sección de la carta */
+/* Estado activo de la sección */
 .carta__seccion.active {
     display: flex !important;
     flex-direction: column;
     align-items: center;
     background-color: var(--verde-salvia-transparencia);
     border-radius: 7px;
-
+    
 }
 
-/*---------- EMPIEZA EL CONTENIDO DE LA CARTA -----------*/
-/* Estilo para las categorías del menú en la carta */
+/*---------- EMPIEZA EL CON TENIDO DE LA CARTA -----------*/
+
 .carta__categoria {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--azul-grisaceo);
-    margin: 3rem 0 1rem;
-    padding: 0 0 0.5rem;
-    text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--azul-grisaceo);
+  margin: 3rem 0 1rem;
+  padding: 0 0 0.5rem;
+  text-transform: uppercase;
 }
 
-/* Estilo para cada ítem en el menú */
 .carta__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    border-bottom: 0.4px solid var(--blanco-crema);
-    transition: background 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 0.4px solid var(--blanco-crema);
+  transition: background 0.3s;
 }
 
-/* Estilo para el último ítem, eliminando la línea de fondo */
 .carta__item:last-child {
-    border-bottom: none;
-    margin: 0 0 1rem;
+  border-bottom: none;
+  margin: 0 0 1rem;
 }
 
-/* Estilo para el nombre del ítem en el menú */
+
 .carta__nombre {
-    color: var(--azul-grisaceo);
-    font-size: 1.1rem;
-    flex: 1;
-    text-align: left;
+  color: var(--azul-grisaceo);
+  font-size: 1.1rem;
+  flex: 1;
+  text-align: left;
 }
 
-/* Estilo para el precio de cada ítem */
 .carta__precio {
-    color: var(--blanco-crema);
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin: 0 1rem 0;
+  color: var(--blanco-crema);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 1rem 0;
 }
 
-/* ============================== */
-/* ====== 13.TEXTOS LEGALES ====== */
-/* ============================== */
 
-/* Estilo para el contenedor principal de los textos legales */
+/*----------TEXTOS LEGALES----------*/
+
+/*------POLITICA DE PRIVACIDAD----*/
 .content__legal {
     padding: 2rem 4rem;
 }
-
-/* Estilo para el título principal (h1) dentro de los textos legales */
 .content__legal--h1 {
-
+    
     color: var(--azul-grisaceo);
-    margin: 0 0 1.5rem 0;
+    margin-bottom: 1.5rem;
     font-size: 2.2rem;
     border-bottom: 2px solid var(--azul-grisaceo);
     padding: 0 0 .625rem;
 }
 
-/* Estilo para los subtítulos de segundo nivel (h2) */
 .content__legal--h2 {
+    
     font-size: 1.8rem;
     color: var(--azul-grisaceo);
     margin: 1.5rem 0 1rem;
 }
 
-/* Estilo para los subtítulos de tercer nivel (h3) */
 .content__legal--h3 {
+    
     font-size: 1.3rem;
     color: var(--azul-grisaceo);
     margin: 1.5rem 0 0.8rem;
 }
 
-/* Estilo común para párrafos (p) y listas (ul) dentro de los textos legales */
-.content__legal--p,
-.content__legal--ul {
+
+.content__legal--p, .content__legal--ul {
     margin: 0 0 1rem;
     color: var(--azul-grisaceo);
 }
 
-/* Estilo específico para las listas desordenadas (ul) */
 .content__legal--ul {
     padding: 0 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
 }
 
-/* Estilo para los elementos dentro de las listas (li) */
-.content__legal--ul>li {
+.content__legal--ul > li {
     margin: 0 1rem 0.5rem;
     color: var(--azul-grisaceo);
 }
